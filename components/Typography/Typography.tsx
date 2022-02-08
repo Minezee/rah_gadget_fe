@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import {
   H1Style,
   H2Style,
@@ -14,7 +13,7 @@ import {
   Label1Style,
   Label2Style,
   Label3Style,
-} from "./Typography.elements";
+} from "./typography.elements";
 
 const H1 = (props: any) => {
   return <H1Style>{props.children}</H1Style>;

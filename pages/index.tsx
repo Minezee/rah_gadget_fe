@@ -2,9 +2,9 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Dropdown from '../components/Dropdown/Dropdown'
-import { ButtonLaptop } from '../components/Button/Button'
-import { Body1, Body2, H1, SH1 } from '../components/Typography/Typography'
+import Dropdown from '../components/dropdown/dropdown'
+import { ButtonLaptop } from '../components/button/button'
+import { Body1, Body2, H1, SH1 } from '../components/typography/typography'
 
 const Home: NextPage = () => {
   return (

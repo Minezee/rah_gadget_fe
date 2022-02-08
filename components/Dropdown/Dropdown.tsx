@@ -3,8 +3,9 @@ import {
   DropdownLabel,
   DropdownItems,
   ItemCheckbox,
-} from "./Dropdown.elements";
-import Checkbox from "../Input/Checkbox";
+}  from "./dropdown.elements";
+
+import Checkbox from "../input/checkbox";
 import { useState } from "react";
 
 const Dropdown = (props: any) => {

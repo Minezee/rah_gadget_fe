@@ -1,4 +1,4 @@
-import { CheckboxWrapper } from "./Checkbox.elements";
+import { CheckboxWrapper } from "./checkbox.elements";
 
 const Checkbox = (props: any) => {
   return (

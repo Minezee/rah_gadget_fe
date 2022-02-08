@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ButtonLaptopStyle } from "./Button.elements";
+import { ButtonLaptopStyle } from "./button.elements";
 
 const ButtonLaptop = (props: any) => {
   return (
