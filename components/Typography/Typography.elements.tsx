@@ -6,7 +6,6 @@ const H1Style = styled.h1`
   font-weight: bold;
   font-size: 96px;
   line-height: 24px;
-  color: #000000;
 `;
 
 const H2Style = styled.h2`
@@ -15,7 +14,6 @@ const H2Style = styled.h2`
   font-weight: bold;
   font-size: 60px;
   line-height: 80px;
-  color: #000000;
 `;
 
 const H3Style = styled.h3`
@@ -24,7 +22,6 @@ const H3Style = styled.h3`
   font-weight: bold;
   font-size: 32px;
   line-height: 80px;
-  color: #000000;
 `;
 
 const SH1Style = styled.h1`
@@ -33,7 +30,6 @@ const SH1Style = styled.h1`
   font-weight: 600;
   font-size: 48px;
   line-height: 44px;
-  color: #000000;
 `;
 
 const SH2Style = styled.h2`
@@ -42,7 +38,6 @@ const SH2Style = styled.h2`
   font-weight: 500;
   font-size: 32px;
   line-height: 44px;
-  color: #000000;
 `;
 
 const SH3Style = styled.h3`
@@ -51,7 +46,6 @@ const SH3Style = styled.h3`
   font-weight: 500;
   font-size: 28px;
   line-height: 24px;
-  color: #000000;
 `;
 
 const Lead1Style = styled.p`
@@ -60,7 +54,6 @@ const Lead1Style = styled.p`
   font-weight: 500;
   font-size: 22px;
   line-height: 24px;
-  color: #000000;
 `;
 const Lead2Style = styled.p`
   font-family: Work Sans;
@@ -68,7 +61,6 @@ const Lead2Style = styled.p`
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
-  color: #000000;
 `;
 const Lead3Style = styled.p`
   font-family: Work Sans;
@@ -76,7 +68,6 @@ const Lead3Style = styled.p`
   font-weight: normal;
   font-size: 18px;
   line-height: 28px;
-  color: #000000;
 `;
 
 const Body1Style = styled.p`
@@ -85,7 +76,6 @@ const Body1Style = styled.p`
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  color: #000000;
 `;
 
 const Body2Style = styled.p`
@@ -94,7 +84,6 @@ const Body2Style = styled.p`
   font-weight: normal;
   font-size: 12px;
   line-height: 24px;
-  color: #000000;
 `;
 
 const Label1Style = styled.p`
@@ -103,7 +92,6 @@ const Label1Style = styled.p`
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
 `;
 
 const Label2Style = styled.p`
@@ -112,7 +100,6 @@ const Label2Style = styled.p`
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
 `;
 
 const Label3Style = styled.p`
@@ -121,7 +108,6 @@ const Label3Style = styled.p`
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
-  color: #000000;
 `;
 
 export {
