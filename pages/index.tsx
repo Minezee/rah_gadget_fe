@@ -12,6 +12,7 @@ import {
   ButtonAlternativeLink
 } from "../components/button/button";
 import { Body1, Body2, H1, SH1 } from "../components/typography/typography";
+import { Container, ContainerFluid } from "../components/container/container";
 
 const Home: NextPage = () => {
   return (
@@ -22,24 +23,18 @@ const Home: NextPage = () => {
     //   {/* <ButtonArrow>Lihat Semua Laptop</ButtonArrow> */}
     // </div>
 
-    <div>
-      <ButtonArrow>Lihat Semua Laptop</ButtonArrow>
-      <ButtonCTA>Lihat Produk</ButtonCTA>
-      <ButtonCarouselLeft></ButtonCarouselLeft>
-      <ButtonCarouselRight></ButtonCarouselRight>
+    // <div>
+    //   <ButtonArrow>Lihat Semua Laptop</ButtonArrow>
+    //   <ButtonCTA>Lihat Produk</ButtonCTA>
+    //   <ButtonCarouselLeft></ButtonCarouselLeft>
+    //   <ButtonCarouselRight></ButtonCarouselRight>
 
-      <ButtonLink>Shopee Link 1</ButtonLink>
-      <ButtonAlternativeLink>Shopee Alternative Link</ButtonAlternativeLink>
-    </div>
-    // <div>
-    //   <H1>Nofath</H1>
-    //   <SH1>Nofath</SH1>
-    //   <Body1>Nofath</Body1>
-    //   <Body2>Nofath</Body2>
+    //   <ButtonLink>Shopee Link 1</ButtonLink>
+    //   <ButtonAlternativeLink>Shopee Alternative Link</ButtonAlternativeLink>
     // </div>
-    // <div>
-    //   <ButtonCTA>NOfath</ButtonCTA>
-    // </div>
+
+    // <Container>Nofath</Container>
+    <Container>Nofath</Container>
   );
 };
 
