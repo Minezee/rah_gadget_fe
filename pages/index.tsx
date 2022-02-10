@@ -13,6 +13,7 @@ import {
 } from "../components/button/button";
 import { Body1, Body2, H1, SH1 } from "../components/typography/typography";
 import { Container, ContainerFluid } from "../components/container/container";
+import Navbar from "../components/navbar/navbar";
 
 const Home: NextPage = () => {
   return (
@@ -34,7 +35,7 @@ const Home: NextPage = () => {
     // </div>
 
     // <Container>Nofath</Container>
-    <Container>Nofath</Container>
+    <Navbar></Navbar>
   );
 };
 
