@@ -2,6 +2,12 @@ import styled from "styled-components";
 import { Container } from "../container/container";
 import { Lead1 } from "../typography/typography";
 
+const NavbarIndicatorWrapper = styled.div`
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+`;
+
 const NavbarWrapper = styled.div`
   width: 100%;
   height: 80px;
@@ -26,7 +32,6 @@ const NavbarItemWrapperStyle = styled.span`
   justify-content: flex-end;
   align-items: center;
   height: 100%;
-
 `;
 
 const NavbarItem = (props: any) => {
@@ -49,9 +54,9 @@ const NavbarItemStyle = styled.div`
   align-items: center;
 
   &:hover {
-    background: #D31E1C;
+    background: #d31e1c;
     transition: 0.2s;
   }
 `;
 
-export { NavbarWrapper, NavbarItemWrapper, NavbarItem };
+export { NavbarIndicatorWrapper, NavbarWrapper, NavbarItemWrapper, NavbarItem };
