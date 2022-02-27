@@ -8,7 +8,7 @@ const NavbarIndicatorWrapper = styled.div`
   top: 0;
 `;
 
-const NavbarWrapper = styled.div`
+const NavbarWrapperStyle = styled.div`
   width: 100%;
   height: 80px;
   background: linear-gradient(
@@ -17,17 +17,31 @@ const NavbarWrapper = styled.div`
     rgba(52, 52, 52, 0.3) 151.25%
   );
   backdrop-filter: blur(10px);
+
+  & > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 `;
 
-const NavbarItemWrapper = (props: any) => {
+const NavbarWrapper = (props: any) => {
   return (
-    <Container>
-      <NavbarItemWrapperStyle>{props.children}</NavbarItemWrapperStyle>
-    </Container>
+    <NavbarWrapperStyle>
+      <Container>{props.children}</Container>
+    </NavbarWrapperStyle>
   );
 };
 
-const NavbarItemWrapperStyle = styled.span`
+// const NavbarItemWrapper = (props: any) => {
+//   return (
+//     <Container>
+//       <NavbarItemWrapperStyle>{props.children}</NavbarItemWrapperStyle>
+//     </Container>
+//   );
+// };
+
+const NavbarItemWrapper = styled.span`
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -59,4 +73,12 @@ const NavbarItemStyle = styled.div`
   }
 `;
 
-export { NavbarIndicatorWrapper, NavbarWrapper, NavbarItemWrapper, NavbarItem };
+const NavbarLogoWrapper = styled.div``;
+
+export {
+  NavbarIndicatorWrapper,
+  NavbarWrapper,
+  NavbarItemWrapper,
+  NavbarItem,
+  NavbarLogoWrapper,
+};

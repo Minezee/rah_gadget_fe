@@ -37,10 +37,10 @@ const Home: NextPage = () => {
 
   return (
     <div>
-      {/* <Navbar>
+      <Navbar>
         <Indicator percentage={scrollPercentage}></Indicator>
-      </Navbar> */}
-      <Footer></Footer>
+      </Navbar>
+      {/* <Footer></Footer> */}
     </div>
   );
 };
