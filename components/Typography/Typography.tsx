@@ -13,6 +13,7 @@ import {
   Label1Style,
   Label2Style,
   Label3Style,
+  H4Style,
 } from "./typography.elements";
 
 const H1 = (props: any) => {
@@ -26,6 +27,10 @@ const H2 = (props: any) => {
 const H3 = (props: any) => {
   return <H3Style className={props.className}>{props.children}</H3Style>;
 };
+
+const H4 = (props: any) => {
+  return <H4Style className={props.className}>{props.children}</H4Style>
+}
 
 const SH1 = (props: any) => {
   return <SH1Style className={props.className}>{props.children}</SH1Style>;
@@ -75,6 +80,7 @@ export {
   H1,
   H2,
   H3,
+  H4,
   SH1,
   SH2,
   SH3,

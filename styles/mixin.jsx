@@ -17,6 +17,7 @@ const device = {
   tablet_lg: `(max-width: ${guide.size.lg}px)`,
   laptop_md: `(max-width: ${guide.size.xl}px)`,
   starter_kit: `1440px`,
+  // starter_kit: `1080px`,
 };
 
 // const mainColor = {

@@ -16,6 +16,7 @@ import { Container, ContainerFluid } from "../components/container/container";
 import Navbar from "../components/navbar/navbar";
 import Indicator from "../components/indicator/indicator";
 import { useEffect, useState } from "react";
+import Footer from "../components/footer/footer";
 
 const Home: NextPage = () => {
   const [scrollPercentage, setScrollPercentage] = useState(0);
@@ -36,49 +37,10 @@ const Home: NextPage = () => {
 
   return (
     <div>
-      <Navbar>
+      {/* <Navbar>
         <Indicator percentage={scrollPercentage}></Indicator>
-      </Navbar>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
-      <H1>Nofath</H1>
+      </Navbar> */}
+      <Footer></Footer>
     </div>
   );
 };
