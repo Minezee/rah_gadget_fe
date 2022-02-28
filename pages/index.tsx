@@ -17,6 +17,7 @@ import Navbar from "../components/navbar/navbar";
 import Indicator from "../components/indicator/indicator";
 import { useEffect, useState } from "react";
 import Footer from "../components/footer/footer";
+import CardProduct from "../components/card/card-product/card-product";
 
 const Home: NextPage = () => {
   const [scrollPercentage, setScrollPercentage] = useState(0);
@@ -36,11 +37,12 @@ const Home: NextPage = () => {
   };
 
   return (
-    <div>
-      <Navbar>
+    <div style={{background: "black", height: "100vh"}}>
+      {/* <Navbar>
         <Indicator percentage={scrollPercentage}></Indicator>
-      </Navbar>
+      </Navbar> */}
       {/* <Footer></Footer> */}
+      <CardProduct rating={2.9}></CardProduct>
     </div>
   );
 };

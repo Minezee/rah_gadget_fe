@@ -3,7 +3,7 @@ import styled from "styled-components";
 const RemoveTyphoStyle = styled.h1`
   margin: 0;
   padding: 0;
-`
+`;
 
 const H1Style = styled.h1`
   font-family: Palanquin;
@@ -123,6 +123,25 @@ const Label3Style = styled.h1`
   line-height: 18px;
 `;
 
+const Label4Style = styled.h1`
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+`;
+
+const Label5Style = styled.h1`
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+
+  color: black;
+`;
+
 export {
   H1Style,
   H2Style,
@@ -139,4 +158,6 @@ export {
   Label1Style,
   Label2Style,
   Label3Style,
+  Label4Style,
+  Label5Style
 };

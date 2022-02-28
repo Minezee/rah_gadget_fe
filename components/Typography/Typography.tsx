@@ -14,6 +14,8 @@ import {
   Label2Style,
   Label3Style,
   H4Style,
+  Label4Style,
+  Label5Style,
 } from "./typography.elements";
 
 const H1 = (props: any) => {
@@ -29,8 +31,8 @@ const H3 = (props: any) => {
 };
 
 const H4 = (props: any) => {
-  return <H4Style className={props.className}>{props.children}</H4Style>
-}
+  return <H4Style className={props.className}>{props.children}</H4Style>;
+};
 
 const SH1 = (props: any) => {
   return <SH1Style className={props.className}>{props.children}</SH1Style>;
@@ -65,15 +67,33 @@ const Body2 = (props: any) => {
 };
 
 const Label1 = (props: any) => {
-  return <Label1Style className={props.className}>{props.children}</Label1Style>;
+  return (
+    <Label1Style className={props.className}>{props.children}</Label1Style>
+  );
 };
 
 const Label2 = (props: any) => {
-  return <Label2Style className={props.className}>{props.children}</Label2Style>;
+  return (
+    <Label2Style className={props.className}>{props.children}</Label2Style>
+  );
 };
 
 const Label3 = (props: any) => {
-  return <Label3Style className={props.className}>{props.children}</Label3Style>;
+  return (
+    <Label3Style className={props.className}>{props.children}</Label3Style>
+  );
+};
+
+const Label4 = (props: any) => {
+  return (
+    <Label4Style className={props.className}>{props.children}</Label4Style>
+  );
+};
+
+const Label5 = (props: any) => {
+  return (
+    <Label5Style className={props.className}>{props.children}</Label5Style>
+  );
 };
 
 export {
@@ -92,4 +112,6 @@ export {
   Label1,
   Label2,
   Label3,
+  Label4,
+  Label5
 };
