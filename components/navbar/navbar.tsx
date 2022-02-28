@@ -16,9 +16,9 @@ const Navbar = (props: any) => {
         </NavbarLogoWrapper>
         <NavbarItemWrapper>
           <NavbarItem>Home</NavbarItem>
-          <NavbarItem>Artikel</NavbarItem>
-          <NavbarItem>Laptop</NavbarItem>
-          <NavbarItem>Brand</NavbarItem>
+          <NavbarItem>Rekomendasi</NavbarItem>
+          <NavbarItem>Review</NavbarItem>
+          <NavbarItem>Katalog</NavbarItem>
           <NavbarItem>Tentang Kami</NavbarItem>
         </NavbarItemWrapper>
       </NavbarWrapper>
