@@ -42,7 +42,7 @@ const Home: NextPage = () => {
         <Indicator percentage={scrollPercentage}></Indicator>
       </Navbar> */}
       {/* <Footer></Footer> */}
-      <CardProduct rating={2.9}></CardProduct>
+      <CardProduct rating={2.9} type={"bisnis"} label={"BisniG"}></CardProduct>
     </div>
   );
 };

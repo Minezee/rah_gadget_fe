@@ -29,7 +29,7 @@ const CardProduct = (props: any) => {
   return (
     <CardProductWrapper>
       <ProductImage>
-        <ProductType label="Bisnis" />
+        <ProductType label={props.label} type={props.type} />
         <Image src="/laptop-example.png" width="250" height="210"></Image>
       </ProductImage>
       <ProductInfo>

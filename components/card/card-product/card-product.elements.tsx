@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { labelColor } from "../../../styles/mixin";
 import { Label1, Label4, Lead3 } from "../../typography/typography";
 import {
   Label1Style,
@@ -34,7 +35,9 @@ const ProductType = (props: any) => {
   return (
     <ProductTypeStyle>
       <ProductTypeLabel>{props.label}</ProductTypeLabel>
-      <ProductTypeTriangle>{props.children}</ProductTypeTriangle>
+      <ProductTypeTriangle type={props.type}>
+        {props.children}
+      </ProductTypeTriangle>
     </ProductTypeStyle>
   );
 };
@@ -57,14 +60,14 @@ const ProductTypeStyle = styled.div`
   align-items: center;
 `;
 
-const ProductTypeTriangle = styled.div`
+const ProductTypeTriangle = styled.div<{ type: string }>`
   position: absolute;
   z-index: 2;
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 90px 90px 0 0;
-  border-color: #007299 transparent transparent transparent;
+  border-color: ${(props) => labelColor[props.type]} transparent transparent transparent;
   display: flex;
   justify-content:center;
   align:items:center;

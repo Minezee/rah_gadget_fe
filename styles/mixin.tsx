@@ -20,6 +20,18 @@ const device = {
   // starter_kit: `1080px`,
 };
 
+const labelColor: {
+  gaming: string;
+  editing: string;
+  bisnis: string;
+  kuliah: string;
+} = {
+  gaming: "#CF5417",
+  editing: "#4C9900",
+  bisnis: "#007299",
+  kuliah: "#EBC247",
+};
+
 // const mainColor = {
 // 	primary: '#745AF6',
 // 	primary_hover: '#9985FF',
@@ -52,4 +64,4 @@ const device = {
 // };
 
 // export { guide, mainColor, textColor, device, fonts };
-export { guide, device };
+export { guide, device, labelColor };
