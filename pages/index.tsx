@@ -38,11 +38,11 @@ const Home: NextPage = () => {
 
   return (
     <div style={{background: "black", height: "100vh"}}>
-      {/* <Navbar>
+      <Navbar>
         <Indicator percentage={scrollPercentage}></Indicator>
-      </Navbar> */}
+      </Navbar>
       {/* <Footer></Footer> */}
-      <CardProduct rating={2.9} type={"bisnis"} label={"BisniG"}></CardProduct>
+      {/* <CardProduct rating={2.9} type={"bisnis"} label={"BisniG"}></CardProduct> */}
     </div>
   );
 };

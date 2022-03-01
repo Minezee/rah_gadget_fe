@@ -61,15 +61,30 @@ const NavbarItemStyle = styled.div`
   padding: 0 28px;
   color: white;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.1s;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  &:hover {
+  & > h1 {
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+  }
+
+  &:hover > h1 {
+    border-bottom: 2px solid #d31e1c;
+    transition: 0.1s;
+  }
+
+  &:active {
     background: #d31e1c;
-    transition: 0.2s;
+    transition: 0.1s;
+  }
+
+  &:active > h1 {
+    border-bottom: 2px solid transparent;
+    transition: 0.1s;
   }
 `;
 
