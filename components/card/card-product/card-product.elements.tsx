@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import { labelColor } from "../../../styles/mixin";
-import { Label1, Label4, Lead3 } from "../../typography/typography";
+import { labelColor, labelColorTypes } from "../../../styles/mixin";
 import {
   Label1Style,
   Label4Style,
@@ -60,7 +59,7 @@ const ProductTypeStyle = styled.div`
   align-items: center;
 `;
 
-const ProductTypeTriangle = styled.div<{ type: string }>`
+const ProductTypeTriangle = styled.div<{type: labelColorTypes}>`
   position: absolute;
   z-index: 2;
   width: 0;

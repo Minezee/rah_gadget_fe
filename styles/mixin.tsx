@@ -20,17 +20,17 @@ const device = {
   // starter_kit: `1080px`,
 };
 
-const labelColor: {
-  gaming: string;
-  editing: string;
-  bisnis: string;
-  kuliah: string;
-} = {
+export type labelColorTypes = "bisnis" | "gaming" | "editing" | "kuliah"
+
+type labelColorMap = {[labelColorType in labelColorTypes] : string}
+
+const labelColor: labelColorMap = {
   gaming: "#CF5417",
   editing: "#4C9900",
   bisnis: "#007299",
   kuliah: "#EBC247",
 };
+
 
 // const mainColor = {
 // 	primary: '#745AF6',
