@@ -1,6 +1,6 @@
 interface StarRatingType {
   ratingValue: number;
-  id: string;
+  id: string | number;
 }
 
 const StarRating = ({ ratingValue, id }: StarRatingType) => {

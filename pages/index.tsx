@@ -18,6 +18,9 @@ import Indicator from "../components/indicator/indicator";
 import { useEffect, useState } from "react";
 import Footer from "../components/footer/footer";
 import CardProduct from "../components/card/card-product/card-product";
+import CardReview from "../components/card/card-review/card-review";
+import CardReviewSideBar from "../components/card/card-review-side-bar/card-review-side-bar";
+import CardRecommendationSideBar from "../components/card/card-recommendation-side-bar/card-recommendation-side-bar";
 
 const Home: NextPage = () => {
   const [scrollPercentage, setScrollPercentage] = useState(0);
@@ -42,7 +45,10 @@ const Home: NextPage = () => {
         <Indicator percentage={scrollPercentage}></Indicator>
       </Navbar>
       {/* <Footer></Footer> */}
-      <CardProduct rating={2.5} type={"bisnis"} label={"Bisnis"}></CardProduct>
+      {/* <CardProduct rating={2.5} type={"bisnis"} label={"Bisnis"}></CardProduct> */}
+      <CardReview />
+      <CardReviewSideBar />
+      <CardRecommendationSideBar />
     </div>
   );
 };

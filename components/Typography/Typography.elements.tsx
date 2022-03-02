@@ -99,6 +99,14 @@ const Body2Style = styled.h1`
   line-height: 24px;
 `;
 
+const Body3Style = styled.h1`
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+`;
+
 const Label1Style = styled.h1`
   font-family: Work Sans;
   font-style: normal;
@@ -155,9 +163,10 @@ export {
   Lead3Style,
   Body1Style,
   Body2Style,
+  Body3Style,
   Label1Style,
   Label2Style,
   Label3Style,
   Label4Style,
-  Label5Style
+  Label5Style,
 };

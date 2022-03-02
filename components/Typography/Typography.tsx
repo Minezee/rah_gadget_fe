@@ -16,10 +16,11 @@ import {
   H4Style,
   Label4Style,
   Label5Style,
+  Body3Style,
 } from "./typography.elements";
 
 interface TypographyType {
-  className: string;
+  className?: string;
   children: React.ReactChild;
 }
 
@@ -71,6 +72,10 @@ const Body2 = ({ className, children }: TypographyType) => {
   return <Body2Style className={className}>{children}</Body2Style>;
 };
 
+const Body3 = ({ className, children }: TypographyType) => {
+  return <Body3Style className={className}>{children}</Body3Style>;
+};
+
 const Label1 = ({ className, children }: TypographyType) => {
   return <Label1Style className={className}>{children}</Label1Style>;
 };
@@ -104,6 +109,7 @@ export {
   Lead3,
   Body1,
   Body2,
+  Body3,
   Label1,
   Label2,
   Label3,
