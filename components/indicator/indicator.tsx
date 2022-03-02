@@ -1,9 +1,13 @@
 import { IndicatorPercent, IndicatorWrapper } from "./indicator.elements";
 
-const Indicator = (props: any) => {
+interface IndicatorType {
+  percentage: number;
+}
+
+const Indicator = ({ percentage }: IndicatorType) => {
   return (
     <IndicatorWrapper>
-      <IndicatorPercent percentage={props.percentage}></IndicatorPercent>
+      <IndicatorPercent percentage={percentage}></IndicatorPercent>
     </IndicatorWrapper>
   );
 };

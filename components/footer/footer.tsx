@@ -13,14 +13,16 @@ import {
 } from "./footer.elements";
 import Image from "next/image";
 
-const Footer = (props: any) => {
+const Footer = () => {
   return (
     <FooterWrapper>
       <FooterContent>
         <FooterContainer>
           <FooterInfo>
             <FooterInfoRow style={{ margin: "0", flex: "2" }}>
-              <FooterCompanyTitle style={{ color: "white !important" }}>Rah Gadget</FooterCompanyTitle>
+              <FooterCompanyTitle style={{ color: "white !important" }}>
+                Rah Gadget
+              </FooterCompanyTitle>
               <FooterSocialMedia>
                 <svg
                   width="18"

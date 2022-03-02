@@ -3,12 +3,15 @@ import {
   DropdownLabel,
   DropdownItems,
   ItemCheckbox,
-}  from "./dropdown.elements";
-
-import Checkbox from "../input/checkbox";
+} from "./dropdown.elements";
+import Checkbox from "../input/checkbox/checkbox";
 import { useState } from "react";
 
-const Dropdown = (props: any) => {
+interface DropdownType {
+  children: React.ReactChild;
+}
+
+const Dropdown = ({ children }: DropdownType) => {
   const [show, setShow] = useState(false);
 
   const status = [
@@ -29,7 +32,7 @@ const Dropdown = (props: any) => {
           setShow(!show);
         }}
       >
-        <p>{props.children}</p>
+        <p>{children}</p>
         {show ? (
           <svg
             width="18"

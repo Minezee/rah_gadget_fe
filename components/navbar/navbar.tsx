@@ -6,8 +6,13 @@ import {
   NavbarWrapper,
 } from "./navbar.elements";
 import Image from "next/image";
+import React from "react";
 
-const Navbar = (props: any) => {
+interface propsType {
+  children: React.ReactChild
+}
+
+const Navbar = ({ children }: propsType) => {
   return (
     <NavbarIndicatorWrapper>
       <NavbarWrapper>
@@ -22,7 +27,7 @@ const Navbar = (props: any) => {
           <NavbarItem>Tentang Kami</NavbarItem>
         </NavbarItemWrapper>
       </NavbarWrapper>
-      {props.children}
+      {children}
     </NavbarIndicatorWrapper>
   );
 };

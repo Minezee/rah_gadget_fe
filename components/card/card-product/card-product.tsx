@@ -12,16 +12,22 @@ import {
   ProductType,
 } from "./card-product.elements";
 
-const CardProduct = (props: any) => {
-  let ratingProduct = props.rating;
-  const rating = [0, 0, 0, 0, 0];
+interface CardProductType {
+  rating: number;
+  label: string;
+  type: string;
+}
 
-  rating.forEach((rat, idx) => {
+const CardProduct = ({ rating, label, type }: CardProductType) => {
+  let ratingProduct = rating;
+  const ratingArray = [0, 0, 0, 0, 0];
+
+  ratingArray.forEach((rat, idx) => {
     if (ratingProduct >= 1) {
-      rating[idx] = 1 * 100;
+      ratingArray[idx] = 1 * 100;
       ratingProduct -= 1.0;
     } else if (ratingProduct > 0 && ratingProduct < 1) {
-      rating[idx] = ratingProduct * 100;
+      ratingArray[idx] = ratingProduct * 100;
       ratingProduct = 0;
     }
   });
@@ -29,17 +35,19 @@ const CardProduct = (props: any) => {
   return (
     <CardProductWrapper>
       <ProductImage>
-        <ProductType label={props.label} type={props.type} />
+        <ProductType label={label} type={type} />
         <Image src="/laptop-example.png" width="250" height="210"></Image>
       </ProductImage>
       <ProductInfo>
         <ProductTitle>Asus Vivobook A409JA</ProductTitle>
         <ProductPrice price={7200000}></ProductPrice>
         <ProductRating>
-          {rating.map((rat, idx) => (
+          {ratingArray.map((rat, idx) => (
             <StarRating ratingValue={rat} id={idx} key={idx}></StarRating>
           ))}
-          <ProductRatingText>{props.rating % 1 == 0 ? props.rating + ".0" : props.rating}</ProductRatingText>
+          <ProductRatingText>
+            {rating % 1 == 0 ? rating + ".0" : rating}
+          </ProductRatingText>
         </ProductRating>
       </ProductInfo>
     </CardProductWrapper>

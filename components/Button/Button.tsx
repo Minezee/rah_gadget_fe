@@ -9,10 +9,14 @@ import {
   ButtonAlternativeLinkStyle,
 } from "./button.elements";
 
-const ButtonArrow = (props: any) => {
+interface ButtonType {
+  children: React.ReactChild;
+}
+
+const ButtonArrow = ({ children }: ButtonType) => {
   return (
     <ButtonArrowStyle>
-      <Lead1>{props.children}</Lead1>
+      <Lead1>{children}</Lead1>
       <svg
         width="24"
         height="24"
@@ -40,15 +44,15 @@ const ButtonArrow = (props: any) => {
   );
 };
 
-const ButtonCTA = (props: any) => {
+const ButtonCTA = ({ children }: ButtonType) => {
   return (
     <ButtonCTAStyle>
-      <Lead1>{props.children}</Lead1>
+      <Lead1>{children}</Lead1>
     </ButtonCTAStyle>
   );
 };
 
-const ButtonCarouselLeft = (props: any) => {
+const ButtonCarouselLeft = () => {
   return (
     <ButtonCarouselStyle>
       <svg
@@ -70,7 +74,7 @@ const ButtonCarouselLeft = (props: any) => {
   );
 };
 
-const ButtonCarouselRight = (props: any) => {
+const ButtonCarouselRight = () => {
   return (
     <ButtonCarouselStyle>
       <svg
@@ -92,17 +96,17 @@ const ButtonCarouselRight = (props: any) => {
   );
 };
 
-const ButtonLink = (props: any) => {
+const ButtonLink = ({ children }: ButtonType) => {
   return (
     <ButtonLinkStyle>
       <Image src="/shopee-logo-white.png" width="24" height="24"></Image>
       <div className="button-margin"></div>
-      <Lead1>{props.children}</Lead1>
+      <Lead1>{children}</Lead1>
     </ButtonLinkStyle>
   );
 };
 
-const ButtonAlternativeLink = (props: any) => {
+const ButtonAlternativeLink = ({ children }: ButtonType) => {
   const [isHovering, setIsHovered] = useState(false);
   const onMouseEnter = () => setIsHovered(true);
   const onMouseLeave = () => setIsHovered(false);
@@ -118,7 +122,7 @@ const ButtonAlternativeLink = (props: any) => {
         <Image src="/shopee-logo-orange.png" width="24" height="24"></Image>
       )}
       <div className="button-margin"></div>
-      <Lead1>{props.children}</Lead1>
+      <Lead1>{children}</Lead1>
     </ButtonAlternativeLinkStyle>
   );
 };

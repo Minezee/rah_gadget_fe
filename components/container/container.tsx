@@ -1,11 +1,15 @@
 import { ContainerStyle, ContainerFluidStyle } from "./container.elements";
 
-const Container = (props: any) => {
-  return <ContainerStyle>{props.children}</ContainerStyle>;
+interface ContainerType {
+  children: JSX.Element|JSX.Element[]
+}
+
+const Container = ({ children }: ContainerType) => {
+  return <ContainerStyle>{children}</ContainerStyle>;
 };
 
-const ContainerFluid = (props: any) => {
-  return <ContainerFluidStyle>{props.children}</ContainerFluidStyle>;
+const ContainerFluid = ({ children }: ContainerType) => {
+  return <ContainerFluidStyle>{children}</ContainerFluidStyle>;
 };
 
 export { Container, ContainerFluid };
