@@ -46,9 +46,9 @@ const Home: NextPage = () => {
       </Navbar>
       {/* <Footer></Footer> */}
       {/* <CardProduct rating={2.5} type={"bisnis"} label={"Bisnis"}></CardProduct> */}
-      <CardReview />
-      <CardReviewSideBar />
-      <CardRecommendationSideBar />
+      {/* <CardReview /> */}
+      {/* <CardReviewSideBar /> */}
+      {/* <CardRecommendationSideBar /> */}
     </div>
   );
 };

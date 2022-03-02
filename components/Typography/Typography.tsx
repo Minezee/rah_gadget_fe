@@ -22,6 +22,7 @@ import {
 interface TypographyType {
   className?: string;
   children: React.ReactChild;
+  style?: Object
 }
 
 const H1 = ({ className, children }: TypographyType) => {
