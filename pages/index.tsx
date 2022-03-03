@@ -41,14 +41,14 @@ const Home: NextPage = () => {
 
   return (
     <div style={{background: "black", height: "100vh"}}>
-      <Navbar>
+      {/* <Navbar>
         <Indicator percentage={scrollPercentage}></Indicator>
-      </Navbar>
+      </Navbar> */}
       {/* <Footer></Footer> */}
       {/* <CardProduct rating={2.5} type={"bisnis"} label={"Bisnis"}></CardProduct> */}
-      {/* <CardReview /> */}
-      {/* <CardReviewSideBar /> */}
-      {/* <CardRecommendationSideBar /> */}
+      <CardReview />
+      <CardReviewSideBar />
+      <CardRecommendationSideBar />
     </div>
   );
 };

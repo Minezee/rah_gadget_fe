@@ -5,12 +5,12 @@ import {
   CardReviewLabel,
   CardReviewRating,
   CardReviewTitle,
-  CardReviewWrapper,
 } from "../card-review/card-review.elements";
+import { CardReviewSidebarWrapper } from "./card-review-side-bar.elements";
 
 const CardReviewSideBar = () => {
   return (
-    <CardReviewWrapper>
+    <CardReviewSidebarWrapper>
       <CardReviewRating>
         <Lead2>4.3</Lead2>
         <svg
@@ -31,7 +31,7 @@ const CardReviewSideBar = () => {
         <CardReviewTitle>Asus VivoBook TM420</CardReviewTitle>
         <CardReviewDesc>Affordable dan simpel banget</CardReviewDesc>
       </CardReviewInfo>
-    </CardReviewWrapper>
+    </CardReviewSidebarWrapper>
   );
 };
 

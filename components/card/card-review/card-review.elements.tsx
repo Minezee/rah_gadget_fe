@@ -33,7 +33,7 @@ const CardReviewRating = styled.div`
   color: white;
   border-radius: 2px;
   z-index: 2;
-  left: 264px;
+  right: 16px;
   top: 125px;
   padding: 10px 7px;
 
