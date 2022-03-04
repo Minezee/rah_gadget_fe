@@ -31,37 +31,21 @@ const labelColor: labelColorMap = {
   kuliah: "#EBC247",
 };
 
+const mainColor = {
+  primary: "#434343",
+  secondary: "#D31E1C",
+  rating_active: "#F2994A",
+  rating_unactive: "#F2994A"
+}
 
-// const mainColor = {
-// 	primary: '#745AF6',
-// 	primary_hover: '#9985FF',
-// 	primary_pressed: '#4B3D8F',
-// 	primary_ghost: '#EFECFE',
-// 	primary_lightGray: '#999999',
-// 	primary_light: '#DBE7F0',
-// 	secondary: '#0F588A',
-// 	secondary_white: '#FFFFFF',
-// 	green_success: 'rgba(22, 137, 34, 1)',
-// 	red_danger: 'rgba(234, 26, 26, 1)',
-// };
+const backgroundColor = {
+  white: "#F4F4F4",
+  whiteCard: "#FFFFFF"
+}
 
-// const textColor = {
-// 	primary_800: '#1C1C1E',
-// 	primary_700: '#2C2C2E',
-// 	primary_600: '#3A3A3C',
-// 	primary_500: '#48484A',
-// 	primary_400: '#636366',
-// 	primary_300: '#8E8E93',
-// 	primary_200: 'rgba(28, 28, 30, 0.6)',
-// 	primary_100: 'rgba(28, 28, 30, 0.2)',
-// 	primary_white: '#FFFFFF',
-// 	primary_red: '#FF0000',
-// };
-
-// const fonts = {
-// 	montserrat: 'Montserrat, sans-serif',
-// 	openSans: 'Open Sans, sans-serif',
-// };
-
-// export { guide, mainColor, textColor, device, fonts };
-export { guide, device, labelColor };
+const textColor = {
+  black: "#222222",
+  white: "#FFFFFF",
+  text_unable: "#BCBCBC",
+}
+export { guide, device, labelColor, mainColor, backgroundColor, textColor };
