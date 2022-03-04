@@ -68,6 +68,7 @@ const Lead1Style = styled.h1`
   font-size: 22px;
   line-height: 24px;
 `;
+
 const Lead2Style = styled.h1`
   font-family: Work Sans;
   font-style: normal;
@@ -75,12 +76,21 @@ const Lead2Style = styled.h1`
   font-size: 20px;
   line-height: 28px;
 `;
+
 const Lead3Style = styled.h1`
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 28px;
+`;
+
+const Lead4Style = styled.h1`
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
 `;
 
 const Body1Style = styled.h1`
@@ -161,6 +171,7 @@ export {
   Lead1Style,
   Lead2Style,
   Lead3Style,
+  Lead4Style,
   Body1Style,
   Body2Style,
   Body3Style,

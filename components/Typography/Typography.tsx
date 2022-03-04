@@ -17,6 +17,7 @@ import {
   Label4Style,
   Label5Style,
   Body3Style,
+  Lead4Style,
 } from "./typography.elements";
 
 interface TypographyType {
@@ -65,6 +66,10 @@ const Lead3 = ({ className, children }: TypographyType) => {
   return <Lead3Style className={className}>{children}</Lead3Style>;
 };
 
+const Lead4 = ({ className, children }: TypographyType) => {
+  return <Lead4Style className={className}>{children}</Lead4Style>;
+};
+
 const Body1 = ({ className, children }: TypographyType) => {
   return <Body1Style className={className}>{children}</Body1Style>;
 };
@@ -108,6 +113,7 @@ export {
   Lead1,
   Lead2,
   Lead3,
+  Lead4,
   Body1,
   Body2,
   Body3,

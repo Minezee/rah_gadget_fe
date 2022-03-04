@@ -11,6 +11,7 @@ import {
 
 interface ButtonType {
   children: React.ReactChild;
+  className: string
 }
 
 const ButtonArrow = ({ children }: ButtonType) => {
@@ -44,9 +45,9 @@ const ButtonArrow = ({ children }: ButtonType) => {
   );
 };
 
-const ButtonCTA = ({ children }: ButtonType) => {
+const ButtonCTA = ({ children, className }: ButtonType) => {
   return (
-    <ButtonCTAStyle>
+    <ButtonCTAStyle className={className}>
       <Lead1>{children}</Lead1>
     </ButtonCTAStyle>
   );
