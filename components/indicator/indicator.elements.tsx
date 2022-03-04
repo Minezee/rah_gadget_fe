@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mainColor } from "../../styles/mixin";
 
 const IndicatorWrapper = styled.div`
   width: 100%;
@@ -8,7 +9,7 @@ const IndicatorWrapper = styled.div`
 const IndicatorPercent = styled.div<{ percentage: number }>`
   height: 100%;
   width: ${props => props.percentage}%;
-  background: #d31e1c;
+  background: ${mainColor.secondary};
 `;
 
 export { IndicatorWrapper, IndicatorPercent };

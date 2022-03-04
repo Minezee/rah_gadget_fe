@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { labelColor, labelColorTypes } from "../../../styles/mixin";
+import { labelColor, labelColorTypes, backgroundColor } from "../../../styles/mixin";
 import {
   Label1Style,
   Label4Style,
@@ -11,7 +11,7 @@ const CardProductWrapper = styled.div`
   position: relative;
   width: 250px;
   height: 320px;
-  background: #ffffff;
+  background: ${backgroundColor.whiteCard};
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   margin-left: 100px;
@@ -26,7 +26,7 @@ const ProductImage = styled.div`
 const ProductInfo = styled.div`
   width: 100%;
   height: 110px;
-  background: #f4f4f4;
+  background: ${backgroundColor.white};
   padding: 13px 14px;
 `;
 

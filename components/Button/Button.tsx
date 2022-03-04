@@ -11,7 +11,7 @@ import {
 
 interface ButtonType {
   children: React.ReactChild;
-  className: string
+  className?: string
 }
 
 const ButtonArrow = ({ children }: ButtonType) => {

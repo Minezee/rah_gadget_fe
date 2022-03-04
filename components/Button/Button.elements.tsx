@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mainColor, textColor } from "../../styles/mixin";
 
 const RemoveButtonStyle = styled.button`
   background: none;
@@ -15,8 +16,8 @@ const RemoveButtonStyle = styled.button`
 
 const ButtonArrowStyle = styled(RemoveButtonStyle)`
   background: none;
-  color: #d31e1c;
-  border: 2px solid #d31e1c;
+  color: ${mainColor.secondary};
+  border: 2px solid ${mainColor.secondary};
   box-sizing: border-box;
   border-radius: 5px;
   padding: 20px 32px;
@@ -27,13 +28,13 @@ const ButtonArrowStyle = styled(RemoveButtonStyle)`
   }
 
   &:hover {
-    color: white;
-    background: #d31e1c;
+    color: ${textColor.white};
+    background: ${mainColor.secondary};
     transition: 0.2s;
   }
 
   &:active {
-    background: #d31e1c;
+    background: ${mainColor.secondary};
   }
 
   &:hover > svg {
@@ -44,27 +45,27 @@ const ButtonArrowStyle = styled(RemoveButtonStyle)`
 
 const ButtonCTAStyle = styled(RemoveButtonStyle)`
   background: none;
-  color: white;
-  border: 2px solid #d31e1c;
+  color: ${textColor.white};
+  border: 2px solid ${mainColor.secondary};
   box-sizing: border-box;
   border-radius: 5px;
   padding: 20px 32px;
   transition: 0.2s;
 
   &:hover {
-    background: #d31e1c;
+    background: ${mainColor.secondary};
     transition: 0.2s;
   }
 
   &:active {
-    background: #d31e1c;
+    background: ${mainColor.secondary};
   }
 `;
 
 const ButtonCarouselStyle = styled(RemoveButtonStyle)`
   width: 64px;
   height: 64px;
-  background-color: #d31e1c;
+  background-color: ${mainColor.secondary};
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -85,7 +86,7 @@ const ButtonLinkStyle = styled(RemoveButtonStyle)`
   padding: 20px 32px;
   background: #ef4e2d;
   border-radius: 5px;
-  color: white;
+  color: ${textColor.white};
 
   display: flex;
   justify-content: space-between;
@@ -124,13 +125,13 @@ const ButtonAlternativeLinkStyle = styled(RemoveButtonStyle)`
 
   &:hover {
     background: #ef4e2d;
-    color: white;
+    color: ${textColor.white};
     transition: 0.2s;
   }
 
   &:active {
     background: #ef4e2d;
-    color: white;
+    color: ${textColor.white};
   }
 `;
 

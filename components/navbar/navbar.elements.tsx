@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mainColor } from "../../styles/mixin";
 import { Container } from "../container/container";
 import { Lead1 } from "../typography/typography";
 
@@ -73,12 +74,12 @@ const NavbarItemStyle = styled.div`
   }
 
   &:hover > h1 {
-    border-bottom: 2px solid #d31e1c;
+    border-bottom: 2px solid ${mainColor.secondary};
     transition: 0.1s;
   }
 
   &:active {
-    background: #d31e1c;
+    background: ${mainColor.secondary};
     transition: 0.1s;
   }
 

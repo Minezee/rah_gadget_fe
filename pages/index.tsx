@@ -51,6 +51,8 @@ const Home: NextPage = () => {
       {/* <CardReviewSideBar /> */}
       {/* <CardRecommendationSideBar /> */}
       <CardArticle></CardArticle>
+      {/* <ButtonArrow>sdsada</ButtonArrow> */}
+      {/* <ButtonLink>adada</ButtonLink> */}
     </div>
   );
 };

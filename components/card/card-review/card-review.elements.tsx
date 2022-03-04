@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mainColor, labelColor } from "../../../styles/mixin";
 import { Body3Style, Lead2Style } from "../../typography/typography.elements";
 
 const CardReviewWrapper = styled.div`
@@ -29,7 +30,7 @@ const CardReviewRating = styled.div`
   position: absolute;
   width: 60px;
   height: 60px;
-  background: #f2994a;
+  background: ${mainColor.rating_active};
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
   color: white;
   border-radius: 2px;
@@ -47,7 +48,7 @@ const CardReviewLabel = styled.div`
   padding: 4px 6px;
   width: 55px;
   height: 25px;
-  background: #ebc247;
+  background: ${labelColor.kuliah};
   border-radius: 2px;
   color: white;
 `;

@@ -35,7 +35,7 @@ const mainColor = {
   primary: "#434343",
   secondary: "#D31E1C",
   rating_active: "#F2994A",
-  rating_unactive: "#F2994A"
+  rating_unactive: "#E5E5E5"
 }
 
 const backgroundColor = {
