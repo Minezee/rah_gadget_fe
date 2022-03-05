@@ -22,6 +22,7 @@ import CardReview from "../components/card/card-review/card-review";
 import CardReviewSideBar from "../components/card/card-review-side-bar/card-review-side-bar";
 import CardRecommendationSideBar from "../components/card/card-recommendation-side-bar/card-recommendation-side-bar";
 import CardArticle from "../components/card/card-article/card-article";
+import CardShopeeLink from "../components/card/card-shopee-link/card-shopee-link";
 
 const Home: NextPage = () => {
   const [scrollPercentage, setScrollPercentage] = useState(0);
@@ -41,7 +42,7 @@ const Home: NextPage = () => {
   };
 
   return (
-    <div style={{background: "black", height: "100vh"}}>
+    <div>
       {/* <Navbar>
         <Indicator percentage={scrollPercentage}></Indicator>
       </Navbar> */}
@@ -50,9 +51,10 @@ const Home: NextPage = () => {
       {/* <CardReview /> */}
       {/* <CardReviewSideBar /> */}
       {/* <CardRecommendationSideBar /> */}
-      <CardArticle></CardArticle>
+      {/* <CardArticle></CardArticle> */}
       {/* <ButtonArrow>sdsada</ButtonArrow> */}
       {/* <ButtonLink>adada</ButtonLink> */}
+      <CardShopeeLink></CardShopeeLink>
     </div>
   );
 };
