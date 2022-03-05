@@ -54,7 +54,13 @@ const Home: NextPage = () => {
       {/* <CardArticle></CardArticle> */}
       {/* <ButtonArrow>sdsada</ButtonArrow> */}
       {/* <ButtonLink>adada</ButtonLink> */}
-      <CardShopeeLink></CardShopeeLink>
+      {/* <CardShopeeLink></CardShopeeLink> */}
+      <ButtonArrow>Beli di Shopee</ButtonArrow>
+      <ButtonCTA>Beli di Shopee</ButtonCTA>
+      <ButtonLink>Beli di Shopee</ButtonLink>
+      <ButtonCarouselRight></ButtonCarouselRight>
+      <ButtonCarouselLeft></ButtonCarouselLeft>
+      <ButtonAlternativeLink>Beli di Shopee</ButtonAlternativeLink>
     </div>
   );
 };

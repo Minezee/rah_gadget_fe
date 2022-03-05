@@ -15,6 +15,7 @@ const RemoveButtonStyle = styled.button`
 `;
 
 const ButtonArrowStyle = styled(RemoveButtonStyle)`
+  height: 64px;
   background: none;
   color: ${mainColor.secondary};
   border: 2px solid ${mainColor.secondary};
@@ -44,6 +45,7 @@ const ButtonArrowStyle = styled(RemoveButtonStyle)`
 `;
 
 const ButtonCTAStyle = styled(RemoveButtonStyle)`
+  height: 64px;
   background: none;
   color: ${textColor.white};
   border: 2px solid ${mainColor.secondary};
@@ -83,6 +85,8 @@ const ButtonCarouselStyle = styled(RemoveButtonStyle)`
 `;
 
 const ButtonLinkStyle = styled(RemoveButtonStyle)`
+  height: 64px;
+  box-sizing: border-box;
   padding: 20px 32px;
   background: #ef4e2d;
   border-radius: 5px;
@@ -108,11 +112,13 @@ const ButtonLinkStyle = styled(RemoveButtonStyle)`
 `;
 
 const ButtonAlternativeLinkStyle = styled(RemoveButtonStyle)`
+  height: 64px;
   background: none;
   padding: 20px 32px;
   border: 2px solid #ef4e2d;
   border-radius: 5px;
   color: #ef4e2d;
+  box-sizing: border-box;
 
   display: flex;
   justify-content: space-between;

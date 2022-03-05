@@ -128,6 +128,12 @@ const ButtonAlternativeLink = ({ children }: ButtonType) => {
   );
 };
 
+const ButtonBuyNow = () => {
+  return(
+    <></>
+  )
+}
+
 export {
   ButtonArrow,
   ButtonCTA,
