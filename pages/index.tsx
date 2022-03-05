@@ -42,7 +42,7 @@ const Home: NextPage = () => {
   };
 
   return (
-    <div>
+    <div style={{ height: "100vh", backgroundColor: "black" }}>
       {/* <Navbar>
         <Indicator percentage={scrollPercentage}></Indicator>
       </Navbar> */}
@@ -54,13 +54,13 @@ const Home: NextPage = () => {
       {/* <CardArticle></CardArticle> */}
       {/* <ButtonArrow>sdsada</ButtonArrow> */}
       {/* <ButtonLink>adada</ButtonLink> */}
-      {/* <CardShopeeLink></CardShopeeLink> */}
-      <ButtonArrow>Beli di Shopee</ButtonArrow>
+      <CardShopeeLink></CardShopeeLink>
+      {/* <ButtonArrow>Beli di Shopee</ButtonArrow>
       <ButtonCTA>Beli di Shopee</ButtonCTA>
       <ButtonLink>Beli di Shopee</ButtonLink>
       <ButtonCarouselRight></ButtonCarouselRight>
       <ButtonCarouselLeft></ButtonCarouselLeft>
-      <ButtonAlternativeLink>Beli di Shopee</ButtonAlternativeLink>
+      <ButtonAlternativeLink>Beli di Shopee</ButtonAlternativeLink> */}
     </div>
   );
 };

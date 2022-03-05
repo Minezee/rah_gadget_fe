@@ -11,6 +11,13 @@ const CardShopeeLinkWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 8px 6px 8px 20px;
 `;
 
-export { CardShopeeLinkWrapper };
+const CardShopeeLinkInfo = styled.div`
+  & > h1 {
+    margin: 6px 0;
+  }
+`
+
+export { CardShopeeLinkWrapper, CardShopeeLinkInfo };
