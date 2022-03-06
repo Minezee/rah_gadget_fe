@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 import { mainColor } from "../../styles/mixin";
 import { Container } from "../container/container";
@@ -26,21 +27,13 @@ const NavbarWrapperStyle = styled.div`
   }
 `;
 
-const NavbarWrapper = (props: any) => {
+const NavbarWrapper = ({ children }: { children: JSX.Element|JSX.Element[] }) => {
   return (
     <NavbarWrapperStyle>
-      <Container>{props.children}</Container>
+      <Container>{children}</Container>
     </NavbarWrapperStyle>
   );
 };
-
-// const NavbarItemWrapper = (props: any) => {
-//   return (
-//     <Container>
-//       <NavbarItemWrapperStyle>{props.children}</NavbarItemWrapperStyle>
-//     </Container>
-//   );
-// };
 
 const NavbarItemWrapper = styled.span`
   display: flex;
@@ -49,10 +42,10 @@ const NavbarItemWrapper = styled.span`
   height: 100%;
 `;
 
-const NavbarItem = (props: any) => {
+const NavbarItem = ({ children }: { children: string }) => {
   return (
     <NavbarItemStyle>
-      <Lead1>{props.children}</Lead1>
+      <Lead1>{children}</Lead1>
     </NavbarItemStyle>
   );
 };

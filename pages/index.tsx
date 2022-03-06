@@ -47,14 +47,14 @@ const Home: NextPage = () => {
         <Indicator percentage={scrollPercentage}></Indicator>
       </Navbar> */}
       {/* <Footer></Footer> */}
-      {/* <CardProduct rating={2.5} type={"bisnis"} label={"Bisnis"}></CardProduct> */}
+      <CardProduct rating={2.5} type={"bisnis"} label={"Bisnis"}></CardProduct>
       {/* <CardReview /> */}
       {/* <CardReviewSideBar /> */}
       {/* <CardRecommendationSideBar /> */}
       {/* <CardArticle></CardArticle> */}
       {/* <ButtonArrow>sdsada</ButtonArrow> */}
       {/* <ButtonLink>adada</ButtonLink> */}
-      <CardShopeeLink></CardShopeeLink>
+      {/* <CardShopeeLink></CardShopeeLink> */}
       {/* <ButtonArrow>Beli di Shopee</ButtonArrow>
       <ButtonCTA>Beli di Shopee</ButtonCTA>
       <ButtonLink>Beli di Shopee</ButtonLink>

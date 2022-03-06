@@ -1,5 +1,9 @@
 import styled from "styled-components";
-import { labelColor, labelColorTypes, backgroundColor } from "../../../styles/mixin";
+import {
+  labelColor,
+  labelColorTypes,
+  backgroundColor,
+} from "../../../styles/mixin";
 import {
   Label1Style,
   Label4Style,
@@ -30,13 +34,11 @@ const ProductInfo = styled.div`
   padding: 13px 14px;
 `;
 
-const ProductType = (props: any) => {
+const ProductType = ({ label, type }: { label: string; type: any }) => {
   return (
     <ProductTypeStyle>
-      <ProductTypeLabel>{props.label}</ProductTypeLabel>
-      <ProductTypeTriangle type={props.type}>
-        {props.children}
-      </ProductTypeTriangle>
+      <ProductTypeLabel>{label}</ProductTypeLabel>
+      <ProductTypeTriangle type={type} />
     </ProductTypeStyle>
   );
 };
@@ -59,25 +61,23 @@ const ProductTypeStyle = styled.div`
   align-items: center;
 `;
 
-const ProductTypeTriangle = styled.div<{type: labelColorTypes}>`
+const ProductTypeTriangle = styled.div<{ type: labelColorTypes }>`
   position: absolute;
   z-index: 2;
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 90px 90px 0 0;
-  border-color: ${(props) => labelColor[props.type]} transparent transparent transparent;
+  border-color: ${(props) =>
+    labelColor[props.type]} transparent transparent transparent;
   display: flex;
   justify-content:center;
   align:items:center;
 `;
 
-const ProductTitle = (props: any) => {
+const ProductTitle = ({ children }: { children: string }) => {
   const title =
-    props.children.length <= 20
-      ? props.children
-      : props.children.substring(0, 20) + "...";
-
+    children.length <= 20 ? children : children.substring(0, 20) + "...";
   return <ProductTitleStyle>{title}</ProductTitleStyle>;
 };
 
@@ -85,11 +85,11 @@ const ProductTitleStyle = styled(Lead3Style)`
   margin: 4px 0;
 `;
 
-const ProductPrice = (props: any) => {
-  const numb = props.price;
+const ProductPrice = ({ price }: { price: number }) => {
+  const numb = price | 0;
   const format = numb.toString().split("").reverse().join("");
   const convert = format.match(/\d{1,3}/g);
-  const rupiah = "Rp " + convert.join(".").split("").reverse().join("");
+  const rupiah = "Rp " + convert!.join(".").split("").reverse().join("");
 
   return <ProductPriceStyle>{rupiah}</ProductPriceStyle>;
 };
