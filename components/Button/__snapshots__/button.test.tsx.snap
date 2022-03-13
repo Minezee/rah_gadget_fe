@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button arrow Matching snapshots 1`] = `
+<button
+  className="sc-bkkeKt sc-ieecCq kNRUrJ dbnMPG"
+>
+  <h1
+    className="sc-furwcr cyDOeD"
+  >
+    Lihat Semua Laptop
+  </h1>
+  <svg
+    data-testid="button-arrow"
+    fill="none"
+    height="24"
+    style={
+      Object {
+        "marginLeft": "16px",
+      }
+    }
+    viewBox="0 0 24 24"
+    width="24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M5 12H19"
+      stroke="white"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="3"
+    />
+    <path
+      d="M12 5L19 12L12 19"
+      stroke="white"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="3"
+    />
+  </svg>
+</button>
+`;

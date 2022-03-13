@@ -8,6 +8,7 @@ const NavbarIndicatorWrapper = styled.div`
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+  z-index: 999;
 `;
 
 const NavbarWrapperStyle = styled.div`

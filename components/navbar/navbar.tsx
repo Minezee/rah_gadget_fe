@@ -1,18 +1,20 @@
 import {
   NavbarIndicatorWrapper,
-  NavbarItem,
   NavbarItemWrapper,
   NavbarLogoWrapper,
   NavbarWrapper,
 } from "./navbar.elements";
 import Image from "next/image";
 import React from "react";
+import Indicator from "../indicator/indicator";
 
 interface propsType {
-  children: React.ReactChild
+  children: JSX.Element|JSX.Element[],
+  indicator?: boolean,
+  percentage?: number
 }
 
-const Navbar = ({ children }: propsType) => {
+const Navbar = ({ children, indicator, percentage }: propsType) => {
   return (
     <NavbarIndicatorWrapper>
       <NavbarWrapper>
@@ -20,14 +22,10 @@ const Navbar = ({ children }: propsType) => {
           <Image src="/nav-rg-logo.svg" width="201" height="37" />
         </NavbarLogoWrapper>
         <NavbarItemWrapper>
-          <NavbarItem>Home</NavbarItem>
-          <NavbarItem>Rekomendasi</NavbarItem>
-          <NavbarItem>Review</NavbarItem>
-          <NavbarItem>Katalog</NavbarItem>
-          <NavbarItem>Tentang Kami</NavbarItem>
+          {children}
         </NavbarItemWrapper>
       </NavbarWrapper>
-      {children}
+      {indicator ? <Indicator percentage={percentage || 0}></Indicator> : ""}
     </NavbarIndicatorWrapper>
   );
 };

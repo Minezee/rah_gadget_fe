@@ -10,15 +10,17 @@ import {
 } from "./button.elements";
 
 interface ButtonType {
-  children: React.ReactChild;
-  className?: string
+  children: string;
+  className?: string;
+  onClick?: () => void;
 }
 
-const ButtonArrow = ({ children }: ButtonType) => {
+const ButtonArrow = ({ children, onClick }: ButtonType) => {
   return (
-    <ButtonArrowStyle>
+    <ButtonArrowStyle onClick={onClick}>
       <Lead1>{children}</Lead1>
       <svg
+        data-testid="button-arrow"
         width="24"
         height="24"
         viewBox="0 0 24 24"
@@ -45,17 +47,17 @@ const ButtonArrow = ({ children }: ButtonType) => {
   );
 };
 
-const ButtonCTA = ({ children, className }: ButtonType) => {
+const ButtonCTA = ({ children, onClick }: ButtonType) => {
   return (
-    <ButtonCTAStyle className={className}>
+    <ButtonCTAStyle onClick={onClick}>
       <Lead1>{children}</Lead1>
     </ButtonCTAStyle>
   );
 };
 
-const ButtonCarouselLeft = () => {
+const ButtonCarouselLeft = ({ onClick }: ButtonType) => {
   return (
-    <ButtonCarouselStyle>
+    <ButtonCarouselStyle onClick={onClick}>
       <svg
         width="32"
         height="32"
@@ -75,9 +77,9 @@ const ButtonCarouselLeft = () => {
   );
 };
 
-const ButtonCarouselRight = () => {
+const ButtonCarouselRight = ({ onClick }: ButtonType) => {
   return (
-    <ButtonCarouselStyle>
+    <ButtonCarouselStyle onClick={onClick}>
       <svg
         width="32"
         height="32"
@@ -97,9 +99,9 @@ const ButtonCarouselRight = () => {
   );
 };
 
-const ButtonLink = ({ children }: ButtonType) => {
+const ButtonLink = ({ children, onClick }: ButtonType) => {
   return (
-    <ButtonLinkStyle>
+    <ButtonLinkStyle onClick={onClick}>
       <Image src="/shopee-logo-white.png" width="24" height="24"></Image>
       <div className="button-margin"></div>
       <Lead1>{children}</Lead1>
@@ -107,7 +109,7 @@ const ButtonLink = ({ children }: ButtonType) => {
   );
 };
 
-const ButtonAlternativeLink = ({ children }: ButtonType) => {
+const ButtonAlternativeLink = ({ children, onClick }: ButtonType) => {
   const [isHovering, setIsHovered] = useState(false);
   const onMouseEnter = () => setIsHovered(true);
   const onMouseLeave = () => setIsHovered(false);
@@ -116,6 +118,7 @@ const ButtonAlternativeLink = ({ children }: ButtonType) => {
     <ButtonAlternativeLinkStyle
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
+      onClick={onClick}
     >
       {isHovering ? (
         <Image src="/shopee-logo-white.png" width="24" height="24"></Image>
@@ -127,12 +130,6 @@ const ButtonAlternativeLink = ({ children }: ButtonType) => {
     </ButtonAlternativeLinkStyle>
   );
 };
-
-const ButtonBuyNow = () => {
-  return(
-    <></>
-  )
-}
 
 export {
   ButtonArrow,
