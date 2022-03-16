@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const ArticlesWrapper = styled.div`
+const SliderWrapper = styled.div`
   width: 100%;
   position: relative;
 
@@ -22,7 +22,7 @@ const ArticlesWrapper = styled.div`
   }
 `;
 
-const ArticlesBox = styled.div`
+const SliderBox = styled.div`
   width: 100%;
   height: 100%;
   overflow: auto;
@@ -36,4 +36,4 @@ const ArticlesBox = styled.div`
 
 `
 
-export { ArticlesWrapper, ArticlesBox };
+export { SliderWrapper, SliderBox };

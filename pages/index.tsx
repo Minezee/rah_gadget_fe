@@ -32,7 +32,7 @@ import CardShopeeLink from "../components/card/card-shopee-link/card-shopee-link
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../store/reducers";
 import { setSearchAttr } from "../store/actions/search";
-import ArticleList from "../components/article-list/article.list";
+import SliderList from "../components/slider-list/slider-list";
 
 const Home: NextPage = () => {
   const [scrollPercentage, setScrollPercentage] = useState(0);
@@ -96,7 +96,7 @@ const Home: NextPage = () => {
 
       <Container>
         <SH2>Artikel Terbaru</SH2>
-        <ArticleList>
+        <SliderList>
           <CardArticle></CardArticle>
           <CardArticle></CardArticle>
           <CardArticle></CardArticle>
@@ -106,7 +106,7 @@ const Home: NextPage = () => {
           <CardArticle></CardArticle>
           <CardArticle></CardArticle>
           <CardArticle></CardArticle>
-        </ArticleList>
+        </SliderList>
       </Container>
     </div>
   );

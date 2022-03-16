@@ -1,26 +1,26 @@
 import { ButtonCarouselLeft, ButtonCarouselRight } from "../button/button";
-import { ArticlesBox, ArticlesWrapper } from "./article-list.elements";
+import { SliderBox, SliderWrapper } from "./slider-list.elements";
 
 interface ArticleListType {
   children: JSX.Element | JSX.Element[];
 }
 
 const nextSlide = () => {
-  document.getElementsByClassName('article-box')[0].scrollLeft += 372;
+  document.getElementsByClassName('slider-box')[0].scrollLeft += 372;
 }
 
 const prevSlide = () => {
-  document.getElementsByClassName('article-box')[0].scrollLeft -= 372;
+  document.getElementsByClassName('slider-box')[0].scrollLeft -= 372;
 } 
 
-const ArticleList = ({ children }: ArticleListType) => {
+const SliderList = ({ children }: ArticleListType) => {
   return (
-    <ArticlesWrapper>
+    <SliderWrapper>
       <ButtonCarouselLeft className="carousel carousel-left" onClick={prevSlide}></ButtonCarouselLeft>
-      <ArticlesBox className="article-box">{children}</ArticlesBox>
+      <SliderBox className="slider-box">{children}</SliderBox>
       <ButtonCarouselRight className="carousel carousel-right" onClick={nextSlide}></ButtonCarouselRight>
-    </ArticlesWrapper>
+    </SliderWrapper>
   );
 };
 
-export default ArticleList;
+export default SliderList;
