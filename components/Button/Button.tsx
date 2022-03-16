@@ -15,9 +15,9 @@ interface ButtonType {
   onClick?: () => void;
 }
 
-const ButtonArrow = ({ children, onClick }: ButtonType) => {
+const ButtonArrow = ({ children, onClick, className }: ButtonType) => {
   return (
-    <ButtonArrowStyle onClick={onClick}>
+    <ButtonArrowStyle className={className} onClick={onClick}>
       <Lead1>{children}</Lead1>
       <svg
         data-testid="button-arrow"
@@ -47,17 +47,17 @@ const ButtonArrow = ({ children, onClick }: ButtonType) => {
   );
 };
 
-const ButtonCTA = ({ children, onClick }: ButtonType) => {
+const ButtonCTA = ({ children, onClick, className }: ButtonType) => {
   return (
-    <ButtonCTAStyle onClick={onClick}>
+    <ButtonCTAStyle className={className} onClick={onClick}>
       <Lead1>{children}</Lead1>
     </ButtonCTAStyle>
   );
 };
 
-const ButtonCarouselLeft = ({ onClick }: ButtonType) => {
+const ButtonCarouselLeft = ({ onClick, className }: { onClick?: () => void, className?: string }) => {
   return (
-    <ButtonCarouselStyle onClick={onClick}>
+    <ButtonCarouselStyle className={className} onClick={onClick}>
       <svg
         width="32"
         height="32"
@@ -77,9 +77,9 @@ const ButtonCarouselLeft = ({ onClick }: ButtonType) => {
   );
 };
 
-const ButtonCarouselRight = ({ onClick }: ButtonType) => {
+const ButtonCarouselRight = ({ onClick, className }: { onClick?: () => void, className?: string }) => {
   return (
-    <ButtonCarouselStyle onClick={onClick}>
+    <ButtonCarouselStyle className={className} onClick={onClick}>
       <svg
         width="32"
         height="32"
@@ -99,9 +99,9 @@ const ButtonCarouselRight = ({ onClick }: ButtonType) => {
   );
 };
 
-const ButtonLink = ({ children, onClick }: ButtonType) => {
+const ButtonLink = ({ children, onClick, className }: ButtonType) => {
   return (
-    <ButtonLinkStyle onClick={onClick}>
+    <ButtonLinkStyle className={className} onClick={onClick}>
       <Image src="/shopee-logo-white.png" width="24" height="24"></Image>
       <div className="button-margin"></div>
       <Lead1>{children}</Lead1>
@@ -109,7 +109,11 @@ const ButtonLink = ({ children, onClick }: ButtonType) => {
   );
 };
 
-const ButtonAlternativeLink = ({ children, onClick }: ButtonType) => {
+const ButtonAlternativeLink = ({
+  children,
+  onClick,
+  className,
+}: ButtonType) => {
   const [isHovering, setIsHovered] = useState(false);
   const onMouseEnter = () => setIsHovered(true);
   const onMouseLeave = () => setIsHovered(false);
@@ -119,6 +123,7 @@ const ButtonAlternativeLink = ({ children, onClick }: ButtonType) => {
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
       onClick={onClick}
+      className={className}
     >
       {isHovering ? (
         <Image src="/shopee-logo-white.png" width="24" height="24"></Image>

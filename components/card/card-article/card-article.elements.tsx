@@ -43,6 +43,9 @@ const CardArticleWrapper = styled.div`
   background-size: cover;
   position: relative;
   overflow: hidden;
+  display: inline-block;
+  margin-right: 32px;
+  white-space: normal;
 
   &:hover ${CardArticleInfo} {
     top: 0;

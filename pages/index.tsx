@@ -11,7 +11,13 @@ import {
   ButtonLink,
   ButtonAlternativeLink,
 } from "../components/button/button";
-import { Body1, Body2, H1, SH1 } from "../components/typography/typography";
+import {
+  Body1,
+  Body2,
+  H1,
+  SH1,
+  SH2,
+} from "../components/typography/typography";
 import { Container, ContainerFluid } from "../components/container/container";
 import Navbar from "../components/navbar/navbar";
 import { NavbarItem } from "../components/navbar/navbar.elements";
@@ -26,6 +32,7 @@ import CardShopeeLink from "../components/card/card-shopee-link/card-shopee-link
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../store/reducers";
 import { setSearchAttr } from "../store/actions/search";
+import ArticleList from "../components/article-list/article.list";
 
 const Home: NextPage = () => {
   const [scrollPercentage, setScrollPercentage] = useState(0);
@@ -55,36 +62,52 @@ const Home: NextPage = () => {
       priceMin: 2000,
       brand: ["gege"],
       category: ["goks"],
-    }
-    dispatch(setSearchAttr(data))
+    };
+    dispatch(setSearchAttr(data));
 
-    console.log(searchResult)
+    console.log(searchResult);
   };
 
   return (
-    <div style={{ background: "black", height: "100vh" }}>
-      {/* <Navbar indicator={true} percentage={scrollPercentage}>
+    <div>
+      <Navbar indicator={true} percentage={scrollPercentage}>
         <NavbarItem>Home</NavbarItem>
         <NavbarItem>Rekomendasi</NavbarItem>
         <NavbarItem>Review</NavbarItem>
         <NavbarItem>Katalog</NavbarItem>
         <NavbarItem>Tentang Kami</NavbarItem>
-      </Navbar> */}
-      {/* <Footer></Footer> */}
-      {/* <CardProduct rating={2.5} type={"bisnis"} label={"Bisnis"}></CardProduct> */}
-      {/* <CardReview /> */}
-      {/* <CardReviewSideBar /> */}
-      {/* <CardRecommendationSideBar /> */}
-      {/* <CardArticle></CardArticle> */}
-      <ButtonArrow onClick={handleBtn}>Lihat Semua Laptop</ButtonArrow>
-      {/* <ButtonLink>adada</ButtonLink> */}
-      {/* <CardShopeeLink></CardShopeeLink> */}
-      {/* <ButtonArrow>Beli di Shopee</ButtonArrow>
-      <ButtonCTA>Beli di Shopee</ButtonCTA>
-      <ButtonLink>Beli di Shopee</ButtonLink>
-      <ButtonCarouselRight></ButtonCarouselRight>
-      <ButtonCarouselLeft></ButtonCarouselLeft>
-      <ButtonAlternativeLink>Beli di Shopee</ButtonAlternativeLink> */}
+      </Navbar>
+
+      <Container>
+        <SH2>Cari laptop ____</SH2>
+        <H1>Buat Kuliah?</H1>
+        <div
+          style={{
+            width: "100%",
+            height: "50px",
+            textAlign: "center",
+            color: "white",
+            background: "black",
+          }}
+        >
+          TEMPAT SEARCH BAR DAN FILTER
+        </div>
+      </Container>
+
+      <Container>
+        <SH2>Artikel Terbaru</SH2>
+        <ArticleList>
+          <CardArticle></CardArticle>
+          <CardArticle></CardArticle>
+          <CardArticle></CardArticle>
+          <CardArticle></CardArticle>
+          <CardArticle></CardArticle>
+          <CardArticle></CardArticle>
+          <CardArticle></CardArticle>
+          <CardArticle></CardArticle>
+          <CardArticle></CardArticle>
+        </ArticleList>
+      </Container>
     </div>
   );
 };
