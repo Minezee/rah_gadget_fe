@@ -26,80 +26,80 @@ interface TypographyType {
   style?: Object
 }
 
-const H1 = ({ className, children }: TypographyType) => {
-  return <H1Style className={className}>{children}</H1Style>;
+const H1 = ({ className, children, style }: TypographyType) => {
+  return <H1Style className={className} style={style}>{children}</H1Style>;
 };
 
-const H2 = ({ className, children }: TypographyType) => {
-  return <H2Style className={className}>{children}</H2Style>;
+const H2 = ({ className, children, style }: TypographyType) => {
+  return <H2Style className={className} style={style}>{children}</H2Style>;
 };
 
-const H3 = ({ className, children }: TypographyType) => {
-  return <H3Style className={className}>{children}</H3Style>;
+const H3 = ({ className, children, style }: TypographyType) => {
+  return <H3Style className={className} style={style}>{children}</H3Style>;
 };
 
-const H4 = ({ className, children }: TypographyType) => {
-  return <H4Style className={className}>{children}</H4Style>;
+const H4 = ({ className, children, style }: TypographyType) => {
+  return <H4Style className={className} style={style}>{children}</H4Style>;
 };
 
-const SH1 = ({ className, children }: TypographyType) => {
-  return <SH1Style className={className}>{children}</SH1Style>;
+const SH1 = ({ className, children, style }: TypographyType) => {
+  return <SH1Style className={className} style={style}>{children}</SH1Style>;
 };
 
-const SH2 = ({ className, children }: TypographyType) => {
-  return <SH2Style className={className}>{children}</SH2Style>;
+const SH2 = ({ className, children, style }: TypographyType) => {
+  return <SH2Style className={className} style={style}>{children}</SH2Style>;
 };
 
-const SH3 = ({ className, children }: TypographyType) => {
-  return <SH3Style className={className}>{children}</SH3Style>;
+const SH3 = ({ className, children, style }: TypographyType) => {
+  return <SH3Style className={className} style={style}>{children}</SH3Style>;
 };
 
-const Lead1 = ({ className, children }: TypographyType) => {
-  return <Lead1Style className={className}>{children}</Lead1Style>;
+const Lead1 = ({ className, children, style }: TypographyType) => {
+  return <Lead1Style className={className} style={style}>{children}</Lead1Style>;
 };
 
-const Lead2 = ({ className, children }: TypographyType) => {
-  return <Lead2Style className={className}>{children}</Lead2Style>;
+const Lead2 = ({ className, children, style }: TypographyType) => {
+  return <Lead2Style className={className} style={style}>{children}</Lead2Style>;
 };
 
-const Lead3 = ({ className, children }: TypographyType) => {
-  return <Lead3Style className={className}>{children}</Lead3Style>;
+const Lead3 = ({ className, children, style }: TypographyType) => {
+  return <Lead3Style className={className} style={style}>{children}</Lead3Style>;
 };
 
-const Lead4 = ({ className, children }: TypographyType) => {
-  return <Lead4Style className={className}>{children}</Lead4Style>;
+const Lead4 = ({ className, children, style }: TypographyType) => {
+  return <Lead4Style className={className} style={style}>{children}</Lead4Style>;
 };
 
-const Body1 = ({ className, children }: TypographyType) => {
-  return <Body1Style className={className}>{children}</Body1Style>;
+const Body1 = ({ className, children, style }: TypographyType) => {
+  return <Body1Style className={className} style={style}>{children}</Body1Style>;
 };
 
-const Body2 = ({ className, children }: TypographyType) => {
-  return <Body2Style className={className}>{children}</Body2Style>;
+const Body2 = ({ className, children, style }: TypographyType) => {
+  return <Body2Style className={className} style={style}>{children}</Body2Style>;
 };
 
-const Body3 = ({ className, children }: TypographyType) => {
-  return <Body3Style className={className}>{children}</Body3Style>;
+const Body3 = ({ className, children, style }: TypographyType) => {
+  return <Body3Style className={className} style={style}>{children}</Body3Style>;
 };
 
-const Label1 = ({ className, children }: TypographyType) => {
-  return <Label1Style className={className}>{children}</Label1Style>;
+const Label1 = ({ className, children, style }: TypographyType) => {
+  return <Label1Style className={className} style={style}>{children}</Label1Style>;
 };
 
-const Label2 = ({ className, children }: TypographyType) => {
-  return <Label2Style className={className}>{children}</Label2Style>;
+const Label2 = ({ className, children, style }: TypographyType) => {
+  return <Label2Style className={className} style={style}>{children}</Label2Style>;
 };
 
-const Label3 = ({ className, children }: TypographyType) => {
-  return <Label3Style className={className}>{children}</Label3Style>;
+const Label3 = ({ className, children, style }: TypographyType) => {
+  return <Label3Style className={className} style={style}>{children}</Label3Style>;
 };
 
-const Label4 = ({ className, children }: TypographyType) => {
-  return <Label4Style className={className}>{children}</Label4Style>;
+const Label4 = ({ className, children, style }: TypographyType) => {
+  return <Label4Style className={className} style={style}>{children}</Label4Style>;
 };
 
-const Label5 = ({ className, children }: TypographyType) => {
-  return <Label5Style className={className}>{children}</Label5Style>;
+const Label5 = ({ className, children, style }: TypographyType) => {
+  return <Label5Style className={className} style={style}>{children}</Label5Style>;
 };
 
 export {

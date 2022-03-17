@@ -18,7 +18,7 @@ const CardProductWrapper = styled.div`
   background: ${backgroundColor.whiteCard};
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
-  margin-left: 100px;
+  // margin-left: 100px;
   overflow: hidden;
 `;
 

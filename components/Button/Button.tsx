@@ -12,7 +12,7 @@ import {
 interface ButtonType {
   children: string;
   className?: string;
-  onClick?: () => void;
+  onClick?: any;
 }
 
 const ButtonArrow = ({ children, onClick, className }: ButtonType) => {
@@ -55,7 +55,7 @@ const ButtonCTA = ({ children, onClick, className }: ButtonType) => {
   );
 };
 
-const ButtonCarouselLeft = ({ onClick, className }: { onClick?: () => void, className?: string }) => {
+const ButtonCarouselLeft = ({ onClick, className }: { onClick?: any, className?: string }) => {
   return (
     <ButtonCarouselStyle className={className} onClick={onClick}>
       <svg
@@ -77,7 +77,7 @@ const ButtonCarouselLeft = ({ onClick, className }: { onClick?: () => void, clas
   );
 };
 
-const ButtonCarouselRight = ({ onClick, className }: { onClick?: () => void, className?: string }) => {
+const ButtonCarouselRight = ({ onClick, className }: { onClick?: any, className?: string }) => {
   return (
     <ButtonCarouselStyle className={className} onClick={onClick}>
       <svg

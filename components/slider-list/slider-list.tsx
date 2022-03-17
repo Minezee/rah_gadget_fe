@@ -1,19 +1,26 @@
+import { useEffect, useState } from "react";
 import { ButtonCarouselLeft, ButtonCarouselRight } from "../button/button";
 import { SliderBox, SliderWrapper } from "./slider-list.elements";
 
 interface ArticleListType {
   children: JSX.Element | JSX.Element[];
+  sliderWidth: number
 }
 
-const nextSlide = () => {
-  document.getElementsByClassName('slider-box')[0].scrollLeft += 372;
-}
+const SliderList = ({ children, sliderWidth }: ArticleListType) => {
+  
+  const [slideWidth, setSlideWidth] = useState(0)
+  useEffect(() => {
+    setSlideWidth(sliderWidth)
+  }, [])
 
-const prevSlide = () => {
-  document.getElementsByClassName('slider-box')[0].scrollLeft -= 372;
-} 
+  const nextSlide = () => {
+    document.getElementsByClassName('slider-box')[0].scrollLeft += slideWidth;
+  }
+  const prevSlide = () => {
+    document.getElementsByClassName('slider-box')[0].scrollLeft -= slideWidth;
+  } 
 
-const SliderList = ({ children }: ArticleListType) => {
   return (
     <SliderWrapper>
       <ButtonCarouselLeft className="carousel carousel-left" onClick={prevSlide}></ButtonCarouselLeft>

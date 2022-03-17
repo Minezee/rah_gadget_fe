@@ -3,14 +3,14 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Dropdown from "../components/dropdown/dropdown";
-import {
-  ButtonCarouselLeft,
-  ButtonCarouselRight,
-  ButtonCTA,
-  ButtonArrow,
-  ButtonLink,
-  ButtonAlternativeLink,
-} from "../components/button/button";
+// import {
+//   ButtonCarouselLeft,
+//   ButtonCarouselRight,
+//   ButtonCTA,
+//   ButtonArrow,
+//   ButtonLink,
+//   ButtonAlternativeLink,
+// } from "../components/button/button";
 import {
   Body1,
   Body2,
@@ -33,6 +33,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../store/reducers";
 import { setSearchAttr } from "../store/actions/search";
 import SliderList from "../components/slider-list/slider-list";
+import ProductList from "../components/product-list/product-list";
+import { RGAdsContainer, RGAdsLeft, RGAdsRight } from "../components/index/index.elements";
 
 const Home: NextPage = () => {
   const [scrollPercentage, setScrollPercentage] = useState(0);
@@ -96,7 +98,7 @@ const Home: NextPage = () => {
 
       <Container>
         <SH2>Artikel Terbaru</SH2>
-        <SliderList>
+        <SliderList sliderWidth={372}>
           <CardArticle></CardArticle>
           <CardArticle></CardArticle>
           <CardArticle></CardArticle>
@@ -107,6 +109,37 @@ const Home: NextPage = () => {
           <CardArticle></CardArticle>
           <CardArticle></CardArticle>
         </SliderList>
+      </Container>
+
+      <Container>
+        <SH2>Laptop terbaik harga 7 Jutaan</SH2>
+        <ProductList gridCount={4} itemWidth={250}>
+          <CardProduct rating={3} label="Gamink" type="gaming"></CardProduct>
+          <CardProduct rating={3} label="Gamink" type="gaming"></CardProduct>
+          <CardProduct rating={3} label="Gamink" type="gaming"></CardProduct>
+          <CardProduct rating={3} label="Gamink" type="gaming"></CardProduct>
+          <CardProduct rating={3} label="Gamink" type="gaming"></CardProduct>
+          <CardProduct rating={3} label="Gamink" type="gaming"></CardProduct>
+        </ProductList>
+      </Container>
+
+      <Container>
+        <RGAdsContainer>
+          <RGAdsLeft></RGAdsLeft>
+          <RGAdsRight></RGAdsRight>
+        </RGAdsContainer>
+      </Container>
+      
+      <Container>
+        <SH2>Ulasan Produk</SH2>
+        <ProductList gridCount={3} itemWidth={340}>
+          <CardReview></CardReview>
+          <CardReview></CardReview>
+          <CardReview></CardReview>
+          <CardReview></CardReview>
+          <CardReview></CardReview>
+          <CardReview></CardReview>
+        </ProductList>
       </Container>
     </div>
   );
