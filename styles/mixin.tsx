@@ -16,7 +16,7 @@ const device = {
   tablet_md: `(max-width: ${guide.size.md}px)`,
   tablet_lg: `(max-width: ${guide.size.lg}px)`,
   laptop_md: `(max-width: ${guide.size.xl}px)`,
-  starter_kit: 1440,
+  starter_kit: 1078,
   // starter_kit: `1080px`,
 };
 

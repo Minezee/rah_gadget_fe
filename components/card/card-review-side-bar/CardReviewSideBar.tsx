@@ -1,12 +1,12 @@
-import { Lead2 } from "../../typography/typography";
+import { Lead2 } from "../../typography/Typography";
 import {
   CardReviewDesc,
   CardReviewInfo,
   CardReviewLabel,
   CardReviewRating,
   CardReviewTitle,
-} from "../card-review/card-review.elements";
-import { CardReviewSidebarWrapper } from "./card-review-side-bar.elements";
+} from "../card-review/CardReview.elements";
+import { CardReviewSidebarWrapper } from "./CardReviewSideBar.elements";
 
 const CardReviewSideBar = () => {
   return (

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { mainColor, textColor } from "../../styles/mixin";
-import { ButtonCTA } from "../button/button";
-import { SH2 } from "../typography/typography";
+import { ButtonCTA } from "../button/Button";
+import { SH2 } from "../typography/Typography";
 
 const RGAdsContainer = styled.div`
   width: 100%;
@@ -32,7 +32,7 @@ const RGAdsRight = () => {
 };
 
 const RGAdsLeftStyle = styled.div`
-  width: 620px;
+  width: 525px;
   height: 320px;
   border-radius: 5px;
   padding: 30px;
@@ -46,7 +46,7 @@ const RGAdsLeftStyle = styled.div`
 `;
 
 const RGAdsRightStyle = styled.div`
-  width: 620px;
+  width: 525px;
   height: 320px;
   border-radius: 5px;
   padding: 30px;

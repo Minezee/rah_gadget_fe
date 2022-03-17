@@ -1,5 +1,5 @@
-import { Lead3, SH3 } from "../../typography/typography"
-import { CardLaptopWrapper } from "./card-laptop-cat.elements"
+import { Lead3, SH3 } from "../../typography/Typography"
+import { CardLaptopWrapper } from "./CardLaptopCat.elements"
 
 const CardLaptopCat = () => {
   return(

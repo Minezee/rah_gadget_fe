@@ -1,4 +1,4 @@
-import { IndicatorPercent, IndicatorWrapper } from "./indicator.elements";
+import { IndicatorPercent, IndicatorWrapper } from "./Indicator.elements";
 
 interface IndicatorType {
   percentage: number;

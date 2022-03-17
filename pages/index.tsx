@@ -1,46 +1,29 @@
 import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import Dropdown from "../components/dropdown/dropdown";
-// import {
-//   ButtonCarouselLeft,
-//   ButtonCarouselRight,
-//   ButtonCTA,
-//   ButtonArrow,
-//   ButtonLink,
-//   ButtonAlternativeLink,
-// } from "../components/button/button";
 import {
-  Body1,
-  Body2,
   H1,
-  SH1,
   SH2,
-} from "../components/typography/typography";
-import { Container, ContainerFluid } from "../components/container/container";
-import Navbar from "../components/navbar/navbar";
-import { NavbarItem } from "../components/navbar/navbar.elements";
+} from "../components/typography/Typography";
 import { useEffect, useState } from "react";
-import Footer from "../components/footer/footer";
-import CardProduct from "../components/card/card-product/card-product";
-import CardReview from "../components/card/card-review/card-review";
-import CardReviewSideBar from "../components/card/card-review-side-bar/card-review-side-bar";
-import CardRecommendationSideBar from "../components/card/card-recommendation-side-bar/card-recommendation-side-bar";
-import CardArticle from "../components/card/card-article/card-article";
-import CardShopeeLink from "../components/card/card-shopee-link/card-shopee-link";
+import { Container } from "../components/container/Container";
+import Navbar from "../components/navbar/Navbar";
+import { NavbarItem } from "../components/navbar/Navbar.elements";
+import Footer from "../components/footer/Footer";
+import CardProduct from "../components/card/card-product/CardProduct";
+import CardReview from "../components/card/card-review/CardReview";
+import CardArticle from "../components/card/card-article/CardArticle";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../store/reducers";
 import { setSearchAttr } from "../store/actions/search";
-import SliderList from "../components/slider-list/slider-list";
-import ProductList from "../components/product-list/product-list";
+import SliderList from "../components/slider-list/SliderList";
+import ProductList from "../components/product-list/ProductList";
 import {
   RGAdsContainer,
   RGAdsLeft,
   RGAdsRight,
 } from "../components/index/index.elements";
-import CardLaptopCat from "../components/card/card-laptop-cat/card-laptop-cat";
-import BrandCard from "../components/card/brand-card/brand-card";
+import CardLaptopCat from "../components/card/card-laptop-cat/CardLaptopCat";
+import BrandCard from "../components/card/brand-card/BrandCard";
+import { ButtonArrow } from "../components/button/Button";
 
 const Home: NextPage = () => {
   const [scrollPercentage, setScrollPercentage] = useState(0);
@@ -102,8 +85,8 @@ const Home: NextPage = () => {
         </div>
       </Container>
 
-      <Container>
-        <SH2>Artikel Terbaru</SH2>
+      <Container style={{marginTop: "40px"}}>
+        <SH2>Rekomendasi Laptop</SH2>
         <SliderList sliderWidth={370} id={"1"}>
           <CardArticle></CardArticle>
           <CardArticle></CardArticle>
@@ -117,7 +100,7 @@ const Home: NextPage = () => {
         </SliderList>
       </Container>
 
-      <Container>
+      <Container style={{marginTop: "56px"}}>
         <SH2>Laptop terbaik harga 7 Jutaan</SH2>
         <ProductList gridCount={4} itemWidth={250}>
           <CardProduct rating={3} label="Gamink" type="gaming"></CardProduct>
@@ -127,16 +110,17 @@ const Home: NextPage = () => {
           <CardProduct rating={3} label="Gamink" type="gaming"></CardProduct>
           <CardProduct rating={3} label="Gamink" type="gaming"></CardProduct>
         </ProductList>
+        <ButtonArrow style={{margin: "48px auto 0 auto"}}>Lihat Semua Laptop</ButtonArrow>
       </Container>
 
-      <Container>
+      <Container style={{marginTop: "56px"}}>
         <RGAdsContainer>
           <RGAdsLeft></RGAdsLeft>
           <RGAdsRight></RGAdsRight>
         </RGAdsContainer>
       </Container>
 
-      <Container>
+      <Container style={{marginTop: "56px"}}>
         <SH2>Ulasan Produk</SH2>
         <ProductList gridCount={3} itemWidth={340}>
           <CardReview></CardReview>
@@ -148,7 +132,7 @@ const Home: NextPage = () => {
         </ProductList>
       </Container>
 
-      <Container>
+      <Container style={{marginTop: "56px"}}>
         <SH2>Kategori Laptop</SH2>
         <ProductList gridCount={4} itemWidth={250}>
           <CardLaptopCat></CardLaptopCat>
@@ -158,7 +142,7 @@ const Home: NextPage = () => {
         </ProductList>
       </Container>
 
-      <Container>
+      <Container style={{marginTop: "56px"}}>
         <SH2>Brand paling dicari</SH2>
         <SliderList sliderWidth={276} id={"2"}>
           <BrandCard></BrandCard>

@@ -1,5 +1,5 @@
 import { ChangeEventHandler } from "react";
-import { CheckboxWrapper } from "./checkbox.elements";
+import { CheckboxWrapper } from "./Checkbox.elements";
 
 interface CheckboxType {
   ids: string,

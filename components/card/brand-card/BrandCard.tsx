@@ -1,4 +1,4 @@
-import { BrandCardWrapper } from "./brand-card.elements";
+import { BrandCardWrapper } from "./BrandCard.elements";
 import Image from "next/image";
 
 const BrandCard = () => {

@@ -1,4 +1,4 @@
-import { ProductListWrapper } from "./product-list.elements";
+import { ProductListWrapper } from "./ProductList.elements";
 
 interface ProductListType {
   children: JSX.Element | JSX.Element[];

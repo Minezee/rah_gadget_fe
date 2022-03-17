@@ -1,23 +1,24 @@
 import Image from "next/image";
 import { useState } from "react";
-import { Lead1 } from "../typography/typography";
+import { Lead1 } from "../typography/Typography";
 import {
   ButtonCarouselStyle,
   ButtonCTAStyle,
   ButtonArrowStyle,
   ButtonLinkStyle,
   ButtonAlternativeLinkStyle,
-} from "./button.elements";
+} from "./Button.elements";
 
 interface ButtonType {
   children: string;
   className?: string;
+  style?: Object;
   onClick?: any;
 }
 
-const ButtonArrow = ({ children, onClick, className }: ButtonType) => {
+const ButtonArrow = ({ children, onClick, className, style }: ButtonType) => {
   return (
-    <ButtonArrowStyle className={className} onClick={onClick}>
+    <ButtonArrowStyle className={className} onClick={onClick} style={style}>
       <Lead1>{children}</Lead1>
       <svg
         data-testid="button-arrow"
@@ -47,9 +48,9 @@ const ButtonArrow = ({ children, onClick, className }: ButtonType) => {
   );
 };
 
-const ButtonCTA = ({ children, onClick, className }: ButtonType) => {
+const ButtonCTA = ({ children, onClick, className, style }: ButtonType) => {
   return (
-    <ButtonCTAStyle className={className} onClick={onClick}>
+    <ButtonCTAStyle className={className} onClick={onClick} style={style}>
       <Lead1>{children}</Lead1>
     </ButtonCTAStyle>
   );

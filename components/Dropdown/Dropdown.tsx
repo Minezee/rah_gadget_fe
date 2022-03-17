@@ -3,8 +3,8 @@ import {
   DropdownLabel,
   DropdownItems,
   ItemCheckbox,
-} from "./dropdown.elements";
-import Checkbox from "../input/checkbox/checkbox";
+} from "./Dropdown.elements";
+import Checkbox from "../input/checkbox/Checkbox";
 import { useState } from "react";
 
 interface DropdownType {

@@ -1,12 +1,13 @@
 import styled from "styled-components";
-import { Container } from "../container/container";
-import { H4Style } from "../typography/typography.elements";
+import { Container } from "../container/Container";
+import { H4Style } from "../typography/Typography.elements";
 
 const FooterWrapper = styled.div`
   width: 100%;
   height: 380px;
   background-color: black;
   background-image: url(/footer-bg.png);
+  margin-top: 118px;
 `;
 
 const FooterContainer = styled(Container)``;

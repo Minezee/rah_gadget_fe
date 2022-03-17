@@ -18,7 +18,7 @@ import {
   Label5Style,
   Body3Style,
   Lead4Style,
-} from "./typography.elements";
+} from "./Typography.elements";
 
 interface TypographyType {
   className?: string;

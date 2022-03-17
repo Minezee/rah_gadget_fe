@@ -3,10 +3,10 @@ import {
   NavbarItemWrapper,
   NavbarLogoWrapper,
   NavbarWrapper,
-} from "./navbar.elements";
+} from "./Navbar.elements";
 import Image from "next/image";
 import React from "react";
-import Indicator from "../indicator/indicator";
+import Indicator from "../indicator/Indicator";
 
 interface propsType {
   children: JSX.Element|JSX.Element[],

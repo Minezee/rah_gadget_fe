@@ -1,6 +1,6 @@
-import { ButtonLink } from "../../button/button";
-import { Body1, SH3 } from "../../typography/typography";
-import { CardShopeeLinkInfo, CardShopeeLinkWrapper } from "./card-shopee-link.elements";
+import { ButtonLink } from "../../button/Button";
+import { Body1, SH3 } from "../../typography/Typography";
+import { CardShopeeLinkInfo, CardShopeeLinkWrapper } from "./CardShopeeLink.elements";
 
 const CardShopeeLink = () => {
   return (

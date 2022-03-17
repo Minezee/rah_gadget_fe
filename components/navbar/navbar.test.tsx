@@ -1,8 +1,8 @@
 import { cleanup, render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import TestRenderer from "react-test-renderer";
-import Navbar from "./navbar";
-import { NavbarItem } from "./navbar.elements";
+import Navbar from "./Navbar";
+import { NavbarItem } from "./Navbar.elements";
 
 afterEach(() => {
   cleanup();

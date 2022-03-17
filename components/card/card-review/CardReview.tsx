@@ -1,4 +1,4 @@
-import { Lead2 } from "../../typography/typography";
+import { Lead2 } from "../../typography/Typography";
 import {
   CardReviewDesc,
   CardReviewInfo,
@@ -6,7 +6,7 @@ import {
   CardReviewRating,
   CardReviewTitle,
   CardReviewWrapper,
-} from "./card-review.elements";
+} from "./CardReview.elements";
 
 const CardReview = () => {
   return (
