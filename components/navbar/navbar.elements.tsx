@@ -5,9 +5,13 @@ import { Container } from "../container/Container";
 import { Lead1 } from "../typography/Typography";
 
 const NavbarIndicatorWrapper = styled.div`
-  position: sticky;
-  position: -webkit-sticky;
+  // position: sticky;
+  // position: -webkit-sticky;
+  
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 999;
 `;
 

@@ -9,9 +9,11 @@ import { useState } from "react";
 
 interface DropdownType {
   children: React.ReactChild;
+  style?: Object,
+  label: String
 }
 
-const Dropdown = ({ children }: DropdownType) => {
+const Dropdown = ({ children, style, label }: DropdownType) => {
   const [show, setShow] = useState(false);
 
   const status = [
@@ -26,7 +28,7 @@ const Dropdown = ({ children }: DropdownType) => {
   ];
 
   return (
-    <DropdownWrapper>
+    <DropdownWrapper style={style}>
       <DropdownLabel
         onClick={() => {
           setShow(!show);
@@ -69,7 +71,7 @@ const Dropdown = ({ children }: DropdownType) => {
                 status[idx].status = !status[idx].status;
               }}
               key={idx}
-              ids={idx.toString() + "type"}
+              ids={idx.toString() + "type" + label}
               status={stat.status}
               label={stat.label}
             />

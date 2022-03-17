@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 const DropdownWrapper = styled.div`
   width: 200px;
+  height: 52px;
   user-select: none;
 `;
 
 const DropdownLabel = styled.div`
-  // height: 52px; // ini nanti pikirin lagi
+  height: 52px; // ini nanti pikirin lagi
   padding: 0px 16px;
   background-image: linear-gradient(to bottom, #343434, #3434344d);
   color: white;

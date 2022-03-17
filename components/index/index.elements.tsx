@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import { mainColor, textColor } from "../../styles/mixin";
+import { backgroundColor, mainColor, textColor } from "../../styles/mixin";
 import { ButtonCTA } from "../button/Button";
+import { ContainerStyle } from "../container/Container.elements";
 import { SH2 } from "../typography/Typography";
 
 const RGAdsContainer = styled.div`
@@ -9,12 +10,14 @@ const RGAdsContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-`
+`;
 
 const RGAdsLeft = () => {
   return (
     <RGAdsLeftStyle>
-      <SH2 style={{ textAlign: "right" }}>Laptop Gaming Buat Kamu yang Suka Mabar</SH2>
+      <SH2 style={{ textAlign: "right" }}>
+        Laptop Gaming Buat Kamu yang Suka Mabar
+      </SH2>
       <ButtonCTA>Button</ButtonCTA>
     </RGAdsLeftStyle>
   );
@@ -59,4 +62,116 @@ const RGAdsRightStyle = styled.div`
   align-items: flex-start;
 `;
 
-export { RGAdsLeft, RGAdsRight, RGAdsContainer };
+const Jumbotron = styled.div`
+  width: 100%;
+  height: 620px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: url("/jumbo-bg.png");
+
+  position: relative;
+`;
+
+const JumbotronCirle1 = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("/ellips-1.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  z-index: 1;
+`;
+const JumbotronCirle2 = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("/ellips-2.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  z-index: 2;
+`;
+const JumbotronLaptop = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("/jumbo-laptop.png");
+  background-repeat: no-repeat;
+  background-position: center right;
+  z-index: 3;
+  right: 60px;
+`;
+const JumbotronSearch = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  color: white;
+`;
+const JumbotronContainer = styled(ContainerStyle)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+`;
+const JumbotronSearchWrapper = styled.div`
+  width: 726px;
+  height: 56px;
+  border-radius: 5px;
+  overflow: hidden;
+
+  display: flex;
+`;
+const JumbotronSearchField = styled.div`
+  width: 100%;
+  height: 100%;
+  padding: 0 17px;
+  background: ${backgroundColor.whiteCard};
+  color: ${textColor.text_unable};
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+`;
+const JumbotronSearchButton = styled.div`
+  width: 105px;
+  height: 100%;
+  background: ${mainColor.primary};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+const JumbotronSearchItem = styled.div`
+  padding: 6px 10px;
+  height: 30px;
+  background: ${mainColor.primary};
+  border-radius: 5px;
+  margin-right: 4px;
+  color: ${textColor.white};
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+const JumbotronSearchCat = styled.div`
+  display: flex;
+  margin-top: 12px;
+`
+
+export {
+  RGAdsLeft,
+  RGAdsRight,
+  RGAdsContainer,
+  Jumbotron,
+  JumbotronCirle1,
+  JumbotronCirle2,
+  JumbotronLaptop,
+  JumbotronSearch,
+  JumbotronContainer,
+  JumbotronSearchWrapper,
+  JumbotronSearchField,
+  JumbotronSearchButton,
+  JumbotronSearchItem,
+  JumbotronSearchCat
+};
