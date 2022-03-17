@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Lead3Style, Lead4Style } from "../../typography/typography.elements";
+import { Lead3Style, Lead4Style } from "../../typography/Typography.elements";
 
 const transitionTime = 0.5;
 

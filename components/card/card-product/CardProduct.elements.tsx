@@ -9,7 +9,7 @@ import {
   Label4Style,
   Label5Style,
   Lead3Style,
-} from "../../typography/typography.elements";
+} from "../../typography/Typography.elements";
 
 const CardProductWrapper = styled.div`
   position: relative;

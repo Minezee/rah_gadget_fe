@@ -156,8 +156,6 @@ const Label5Style = styled.h1`
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.01em;
-
-  color: black;
 `;
 
 export {
