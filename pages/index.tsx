@@ -34,7 +34,13 @@ import { RootState } from "../store/reducers";
 import { setSearchAttr } from "../store/actions/search";
 import SliderList from "../components/slider-list/slider-list";
 import ProductList from "../components/product-list/product-list";
-import { RGAdsContainer, RGAdsLeft, RGAdsRight } from "../components/index/index.elements";
+import {
+  RGAdsContainer,
+  RGAdsLeft,
+  RGAdsRight,
+} from "../components/index/index.elements";
+import CardLaptopCat from "../components/card/card-laptop-cat/card-laptop-cat";
+import BrandCard from "../components/card/brand-card/brand-card";
 
 const Home: NextPage = () => {
   const [scrollPercentage, setScrollPercentage] = useState(0);
@@ -98,7 +104,7 @@ const Home: NextPage = () => {
 
       <Container>
         <SH2>Artikel Terbaru</SH2>
-        <SliderList sliderWidth={372}>
+        <SliderList sliderWidth={370} id={"1"}>
           <CardArticle></CardArticle>
           <CardArticle></CardArticle>
           <CardArticle></CardArticle>
@@ -129,7 +135,7 @@ const Home: NextPage = () => {
           <RGAdsRight></RGAdsRight>
         </RGAdsContainer>
       </Container>
-      
+
       <Container>
         <SH2>Ulasan Produk</SH2>
         <ProductList gridCount={3} itemWidth={340}>
@@ -141,6 +147,35 @@ const Home: NextPage = () => {
           <CardReview></CardReview>
         </ProductList>
       </Container>
+
+      <Container>
+        <SH2>Kategori Laptop</SH2>
+        <ProductList gridCount={4} itemWidth={250}>
+          <CardLaptopCat></CardLaptopCat>
+          <CardLaptopCat></CardLaptopCat>
+          <CardLaptopCat></CardLaptopCat>
+          <CardLaptopCat></CardLaptopCat>
+        </ProductList>
+      </Container>
+
+      <Container>
+        <SH2>Brand paling dicari</SH2>
+        <SliderList sliderWidth={276} id={"2"}>
+          <BrandCard></BrandCard>
+          <BrandCard></BrandCard>
+          <BrandCard></BrandCard>
+          <BrandCard></BrandCard>
+          <BrandCard></BrandCard>
+          <BrandCard></BrandCard>
+          <BrandCard></BrandCard>
+          <BrandCard></BrandCard>
+          <BrandCard></BrandCard>
+          <BrandCard></BrandCard>
+          <BrandCard></BrandCard>
+        </SliderList>
+      </Container>
+
+      <Footer></Footer>
     </div>
   );
 };
