@@ -1,8 +1,9 @@
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { backgroundColor, mainColor, textColor } from "../../styles/mixin";
 import { ButtonCTA } from "../button/Button";
 import { ContainerStyle } from "../container/Container.elements";
-import { SH2 } from "../typography/Typography";
+import { H1, SH2 } from "../typography/Typography";
 
 const RGAdsContainer = styled.div`
   width: 100%;
@@ -33,6 +34,22 @@ const RGAdsRight = () => {
     </RGAdsRightStyle>
   );
 };
+
+// const JumbotronTitleChanges = () => {
+//   const [titleType] = useState(["Gaming", "Kuliah", "Bisnis", "Editing"]);
+//   const [noType, setNoType] = useState(0);
+
+//   useEffect(() => {
+//     let current = (noType % 3) + 1;
+//     setTimeout(() => {
+//       setNoType(current);
+//     }, 3000);
+//   }, [noType]);
+
+//   return (
+//     <H1 style={{ margin: "0 0 50px 0" }}>{`Buat ${titleType[noType]}?`}</H1>
+//   );
+// };
 
 const RGAdsLeftStyle = styled.div`
   width: 525px;
@@ -141,6 +158,8 @@ const JumbotronSearchButton = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  user-select: none;
 `;
 const JumbotronSearchItem = styled.div`
   padding: 6px 10px;
@@ -157,7 +176,23 @@ const JumbotronSearchItem = styled.div`
 const JumbotronSearchCat = styled.div`
   display: flex;
   margin-top: 12px;
-`
+`;
+const InputLaptopName = styled.input`
+  font-family: Work Sans;
+  width: 100%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+
+  & {
+    border: none;
+    background: none;
+  }
+  &:focus {
+    outline: none;
+  }
+`;
 
 export {
   RGAdsLeft,
@@ -173,5 +208,6 @@ export {
   JumbotronSearchField,
   JumbotronSearchButton,
   JumbotronSearchItem,
-  JumbotronSearchCat
+  JumbotronSearchCat,
+  InputLaptopName
 };

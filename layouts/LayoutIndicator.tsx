@@ -5,9 +5,10 @@ import { NavbarItem } from "../components/navbar/Navbar.elements";
 
 interface LayoutIndicatorType {
   children: JSX.Element | JSX.Element[];
+  style?: Object;
 }
 
-const LayoutIndicator = ({ children }: LayoutIndicatorType) => {
+const LayoutIndicator = ({ children, style }: LayoutIndicatorType) => {
   const [scrollPercentage, setScrollPercentage] = useState(0);
 
   useEffect(() => {
@@ -25,7 +26,7 @@ const LayoutIndicator = ({ children }: LayoutIndicatorType) => {
   };
 
   return (
-    <div>
+    <div style={style}>
       <Navbar indicator={true} percentage={scrollPercentage}>
         <NavbarItem>Home</NavbarItem>
         <NavbarItem>Rekomendasi</NavbarItem>

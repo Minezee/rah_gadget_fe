@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mainColor } from "../../styles/mixin";
 
 const DropdownWrapper = styled.div`
   width: 200px;
@@ -33,6 +34,36 @@ const DropdownItems = styled.div<{ show: Boolean }>`
   box-sizing: border-box;
 `;
 
+const CircleNumber = styled.div`
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background: ${mainColor.secondary};
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const SquarePrice = styled.div`
+  width: 27px;
+  height: 18px;
+  background: ${mainColor.secondary};
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 const ItemCheckbox = styled.div``;
 
-export { DropdownWrapper, DropdownLabel, DropdownItems, ItemCheckbox };
+
+
+export {
+  DropdownWrapper,
+  DropdownLabel,
+  DropdownItems,
+  ItemCheckbox,
+  CircleNumber,
+  SquarePrice,
+};

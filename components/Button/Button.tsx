@@ -56,9 +56,16 @@ const ButtonCTA = ({ children, onClick, className, style }: ButtonType) => {
   );
 };
 
-const ButtonCarouselLeft = ({ onClick, className }: { onClick?: any, className?: string }) => {
+const ButtonCarouselLeft = ({
+  onClick,
+  className,
+  style,
+}: {
+  onClick?: any;
+  className?: string;
+}) => {
   return (
-    <ButtonCarouselStyle className={className} onClick={onClick}>
+    <ButtonCarouselStyle className={className} onClick={onClick} style={style}>
       <svg
         width="32"
         height="32"
@@ -78,9 +85,16 @@ const ButtonCarouselLeft = ({ onClick, className }: { onClick?: any, className?:
   );
 };
 
-const ButtonCarouselRight = ({ onClick, className }: { onClick?: any, className?: string }) => {
+const ButtonCarouselRight = ({
+  onClick,
+  className,
+  style,
+}: {
+  onClick?: any;
+  className?: string;
+}) => {
   return (
-    <ButtonCarouselStyle className={className} onClick={onClick}>
+    <ButtonCarouselStyle className={className} onClick={onClick} style={style}>
       <svg
         width="32"
         height="32"
@@ -100,9 +114,9 @@ const ButtonCarouselRight = ({ onClick, className }: { onClick?: any, className?
   );
 };
 
-const ButtonLink = ({ children, onClick, className }: ButtonType) => {
+const ButtonLink = ({ children, onClick, className, style }: ButtonType) => {
   return (
-    <ButtonLinkStyle className={className} onClick={onClick}>
+    <ButtonLinkStyle className={className} onClick={onClick} style={style}>
       <Image src="/shopee-logo-white.png" width="24" height="24"></Image>
       <div className="button-margin"></div>
       <Lead1>{children}</Lead1>
@@ -114,6 +128,7 @@ const ButtonAlternativeLink = ({
   children,
   onClick,
   className,
+  style,
 }: ButtonType) => {
   const [isHovering, setIsHovered] = useState(false);
   const onMouseEnter = () => setIsHovered(true);
@@ -125,6 +140,7 @@ const ButtonAlternativeLink = ({
       onMouseLeave={onMouseLeave}
       onClick={onClick}
       className={className}
+      style={style}
     >
       {isHovering ? (
         <Image src="/shopee-logo-white.png" width="24" height="24"></Image>

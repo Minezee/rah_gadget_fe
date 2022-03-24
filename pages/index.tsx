@@ -14,6 +14,7 @@ import { setSearchAttr } from "../store/actions/search";
 import SliderList from "../components/slider-list/SliderList";
 import ProductList from "../components/product-list/ProductList";
 import {
+  InputLaptopName,
   Jumbotron,
   JumbotronCirle1,
   JumbotronCirle2,
@@ -32,29 +33,37 @@ import {
 import CardLaptopCat from "../components/card/card-laptop-cat/CardLaptopCat";
 import BrandCard from "../components/card/brand-card/BrandCard";
 import { ButtonArrow } from "../components/button/Button";
-import Dropdown from "../components/dropdown/Dropdown";
+import { HomeDropdownBrand, HomeDropdownHarga, HomeDropdownKategori } from "../components/dropdown/Dropdown";
 import LayoutIndicator from "../layouts/LayoutIndicator";
 import LayoutNonIndicator from "../layouts/LayoutNonIndicator";
 
 const Home: NextPage = () => {
-  const [searchItem, setSearchItem] = useState(["Harga", "Brand", "Kategori"]);
+  const [searchItemActive, setSearchItemActive] = useState([]);
+  const [titleType] = useState(["Gaming", "Kuliah", "Bisnis", "Editing"]);
+  const [noType, setNoType] = useState(0);
 
-  const dispatch = useDispatch();
-  const { searchLoading, searchResult, searchError } = useSelector(
-    (state: RootState) => state.searchReducer
-  );
+  useEffect(() => {
+    let current = (noType % 3) + 1;
+    setTimeout(() => {
+      setNoType(current);
+    }, 3000);
+  }, [noType]);
 
-  const handleBtn = () => {
-    const data = {
-      priceMax: 1000,
-      priceMin: 2000,
-      brand: ["gege"],
-      category: ["goks"],
-    };
-    dispatch(setSearchAttr(data));
-
-    console.log(searchResult);
-  };
+  // CONTOH REDUX NANTINYA
+  // const dispatch = useDispatch();
+  // const { searchLoading, searchResult, searchError } = useSelector(
+  //   (state: RootState) => state.searchReducer
+  // );
+  // const handleBtn = () => {
+  //   const data = {
+  //     priceMax: 1000,
+  //     priceMin: 2000,
+  //     brand: ["gege"],
+  //     category: ["goks"],
+  //   };
+  //   dispatch(setSearchAttr(data));
+  //   console.log(searchResult);
+  // };
 
   return (
     <div>
@@ -66,11 +75,11 @@ const Home: NextPage = () => {
           <JumbotronSearch>
             <JumbotronContainer>
               <SH2 style={{ margin: "0 0 50px 0" }}>Cari laptop ____</SH2>
-              <H1 style={{ margin: "0 0 50px 0" }}>Buat Kuliah?</H1>
+              <H1 style={{ margin: "0 0 50px 0" }}>{`Buat ${titleType[noType]}?`}</H1>
               <JumbotronSearchWrapper>
                 <JumbotronSearchField>
-                  {searchItem.map((item) => (
-                    <JumbotronSearchItem>
+                  {searchItemActive.map((item, idx) => (
+                    <JumbotronSearchItem key={idx}>
                       <Label3 style={{ margin: "0 18px 0 0" }}>{item}</Label3>
                       <svg
                         width="16"
@@ -82,33 +91,36 @@ const Home: NextPage = () => {
                         <path
                           d="M12 4L4 12"
                           stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                         <path
                           d="M4 4L12 12"
                           stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                       </svg>
                     </JumbotronSearchItem>
                   ))}
-                  <Lead2 style={{ marginLeft: "16px" }}>Cari laptop ...</Lead2>
+                  <InputLaptopName type="text" style={{ marginLeft: "16px" }} placeholder="Cari laptop ..." />
                 </JumbotronSearchField>
                 <JumbotronSearchButton>
                   <Lead2>Cari</Lead2>
                 </JumbotronSearchButton>
               </JumbotronSearchWrapper>
               <JumbotronSearchCat>
-                <Dropdown style={{ marginRight: "8px" }} label="harga">
+                <HomeDropdownHarga itemActive={searchItemActive} setItemActive={setSearchItemActive} style={{ marginRight: "8px" }} label="harga">
                   <Lead2>Harga</Lead2>
-                </Dropdown>
-                <Dropdown style={{ marginRight: "8px" }} label="brand">
+                </HomeDropdownHarga>
+                <HomeDropdownBrand itemActive={searchItemActive} setItemActive={setSearchItemActive} style={{ marginRight: "8px" }} label="brand">
                   <Lead2>Brand</Lead2>
-                </Dropdown>
+                </HomeDropdownBrand>
+                <HomeDropdownKategori itemActive={searchItemActive} setItemActive={setSearchItemActive} style={{ marginRight: "8px" }} label="brand">
+                  <Lead2>Brand</Lead2>
+                </HomeDropdownKategori>
               </JumbotronSearchCat>
             </JumbotronContainer>
           </JumbotronSearch>
