@@ -66,7 +66,7 @@ const HomeDropdownHarga = ({ children, style, label, itemActive, setItemActive }
               fill="white"
             />
           </svg>
-        ) : hargaMin > 0 || hargaMax > 0 ? (
+        ) : (hargaMin > 0 || hargaMax > 0) && (semuaHarga == false) ? (
           <SquarePrice>
             <Label3 style={{ margin: "0" }}>ON</Label3>
           </SquarePrice>
