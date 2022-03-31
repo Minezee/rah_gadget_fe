@@ -93,7 +93,7 @@ const ButtonLinkStyle = styled(RemoveButtonStyle)`
   color: ${textColor.white};
 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   transition: 0.2s;
 
@@ -121,7 +121,7 @@ const ButtonAlternativeLinkStyle = styled(RemoveButtonStyle)`
   box-sizing: border-box;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   transition: 0.2s;
 

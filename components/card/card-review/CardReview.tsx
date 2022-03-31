@@ -8,9 +8,13 @@ import {
   CardReviewWrapper,
 } from "./CardReview.elements";
 
-const CardReview = () => {
+interface CardReviewType {
+  style?: Object;
+}
+
+const CardReview = ({ style }: CardReviewType) => {
   return (
-    <CardReviewWrapper>
+    <CardReviewWrapper style={style}>
       <CardReviewRating>
         <Lead2>4.3</Lead2>
         <svg

@@ -63,6 +63,7 @@ const ButtonCarouselLeft = ({
 }: {
   onClick?: any;
   className?: string;
+  style?: Object
 }) => {
   return (
     <ButtonCarouselStyle className={className} onClick={onClick} style={style}>
@@ -92,6 +93,7 @@ const ButtonCarouselRight = ({
 }: {
   onClick?: any;
   className?: string;
+  style?: Object
 }) => {
   return (
     <ButtonCarouselStyle className={className} onClick={onClick} style={style}>

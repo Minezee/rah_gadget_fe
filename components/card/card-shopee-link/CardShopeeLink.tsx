@@ -1,10 +1,17 @@
 import { ButtonLink } from "../../button/Button";
 import { Body1, SH3 } from "../../typography/Typography";
-import { CardShopeeLinkInfo, CardShopeeLinkWrapper } from "./CardShopeeLink.elements";
+import {
+  CardShopeeLinkInfo,
+  CardShopeeLinkWrapper,
+} from "./CardShopeeLink.elements";
 
-const CardShopeeLink = () => {
+interface CardShopeeLinkType {
+  style?: Object;
+}
+
+const CardShopeeLink = ({ style }: CardShopeeLinkType) => {
   return (
-    <CardShopeeLinkWrapper>
+    <CardShopeeLinkWrapper style={style}>
       <CardShopeeLinkInfo>
         <Body1>dellstore.id</Body1>
         <SH3>Rp. 17.499.000</SH3>

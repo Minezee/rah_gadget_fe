@@ -18,6 +18,8 @@ import {
   Label5Style,
   Body3Style,
   Lead4Style,
+  SH4Style,
+  SH5Style,
 } from "./Typography.elements";
 
 interface TypographyType {
@@ -52,6 +54,14 @@ const SH2 = ({ className, children, style }: TypographyType) => {
 
 const SH3 = ({ className, children, style }: TypographyType) => {
   return <SH3Style className={className} style={style}>{children}</SH3Style>;
+};
+
+const SH4 = ({ className, children, style }: TypographyType) => {
+  return <SH4Style className={className} style={style}>{children}</SH4Style>;
+};
+
+const SH5 = ({ className, children, style }: TypographyType) => {
+  return <SH5Style className={className} style={style}>{children}</SH5Style>;
 };
 
 const Lead1 = ({ className, children, style }: TypographyType) => {
@@ -110,6 +120,8 @@ export {
   SH1,
   SH2,
   SH3,
+  SH4,
+  SH5,
   Lead1,
   Lead2,
   Lead3,

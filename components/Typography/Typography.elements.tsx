@@ -61,6 +61,22 @@ const SH3Style = styled.h1`
   line-height: 24px;
 `;
 
+const SH4Style = styled.h1`
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 44px;
+`;
+
+const SH5Style = styled.h1`
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 44px;
+`;
+
 const Lead1Style = styled.h1`
   font-family: Work Sans;
   font-style: normal;
@@ -166,6 +182,8 @@ export {
   SH1Style,
   SH2Style,
   SH3Style,
+  SH4Style,
+  SH5Style,
   Lead1Style,
   Lead2Style,
   Lead3Style,

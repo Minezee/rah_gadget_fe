@@ -1,13 +1,14 @@
 interface StarRatingType {
   ratingValue: number;
   id: string | number;
+  starWidth?: string
 }
 
-const StarRating = ({ ratingValue, id }: StarRatingType) => {
+const StarRating = ({ ratingValue, id, starWidth }: StarRatingType) => {
   return (
     <svg
-      width="20"
-      height="19"
+      width={starWidth || "24"}
+      height={starWidth || "24"}
       viewBox="0 0 20 19"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
