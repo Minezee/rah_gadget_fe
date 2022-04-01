@@ -38,7 +38,7 @@ import {
   ReviewScoreTitle,
   ReviewScoreDetail,
   NewestReview,
-} from "../components/isi-review/isi-review.elements";
+} from "../components/pages-component/isi-review/isi-review.elements";
 import OtherProduct from "../components/other-product/OtherProduct";
 import StarRating from "../components/star-rating/StarRating";
 import {

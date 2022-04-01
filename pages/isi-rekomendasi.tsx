@@ -7,7 +7,7 @@ import {
   ButtonBuyWrapper,
   PriceButton,
   ProductDescription,
-} from "../components/isi-rekomendasi/isi-rekomendasi.elements";
+} from "../components/pages-component/isi-rekomendasi/isi-rekomendasi.elements";
 import {
   IsiReviewContainer,
   IsiReviewMainContent,
@@ -43,7 +43,7 @@ import {
   ReviewScoreTitle,
   ReviewScoreDetail,
   NewestReview,
-} from "../components/isi-review/isi-review.elements";
+} from "../components/pages-component/isi-review/isi-review.elements";
 import OtherProduct from "../components/other-product/OtherProduct";
 import StarRating from "../components/star-rating/StarRating";
 import {
@@ -69,7 +69,7 @@ const IsiRekomendasi = () => {
   return (
     <LayoutIndicator style={{ paddingTop: "150px" }}>
       <Container>
-        <H2>Dell XPS 13 Plus: Desain Lebih Minimalis, Jauh Lebih Bertenaga</H2>
+        <H2>5 Laptop Gaming Dengan Harga 10 Jutaan Terbaik Tahun 2022</H2>
       </Container>
       <IsiReviewContainer>
         <IsiReviewMainContent>

@@ -5,8 +5,8 @@ import {
   labelColorTypes,
   mainColor,
   textColor,
-} from "../../styles/mixin";
-import { ContainerStyle } from "../container/Container.elements";
+} from "../../../styles/mixin";
+import { ContainerStyle } from "../../container/Container.elements";
 
 const IsiReviewContainer = styled(ContainerStyle)`
   display: grid;
