@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { mainColor, textColor } from "../../styles/mixin";
+import { mainColor, textColor } from "../../../styles/mixin";
 
 const PriceButton = styled.div`
   padding: 16px 0px;

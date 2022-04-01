@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
-import { backgroundColor, mainColor, textColor } from "../../styles/mixin";
-import { ButtonCTA } from "../button/Button";
-import { ContainerStyle } from "../container/Container.elements";
-import { H1, SH2 } from "../typography/Typography";
+import { backgroundColor, mainColor, textColor } from "../../../styles/mixin";
+import { ButtonCTA } from "../../button/Button";
+import { ContainerStyle } from "../../container/Container.elements";
+import { H1, SH2 } from "../../typography/Typography";
 
 const RGAdsContainer = styled.div`
   width: 100%;
@@ -177,8 +177,10 @@ const JumbotronSearchCat = styled.div`
   display: flex;
   margin-top: 12px;
 `;
-const InputLaptopName = styled.input`
+const InputField = styled.input`
   font-family: Work Sans;
+  margin: 0;
+  padding: 0;
   width: 100%;
   font-style: normal;
   font-weight: 500;
@@ -209,5 +211,5 @@ export {
   JumbotronSearchButton,
   JumbotronSearchItem,
   JumbotronSearchCat,
-  InputLaptopName
+  InputField
 };
