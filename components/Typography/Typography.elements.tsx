@@ -109,6 +109,14 @@ const Lead4Style = styled.h1`
   line-height: 44px;
 `;
 
+const Lead5Style = styled.h1`
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+`;
+
 const Body1Style = styled.h1`
   font-family: Work Sans;
   font-style: normal;
@@ -188,6 +196,7 @@ export {
   Lead2Style,
   Lead3Style,
   Lead4Style,
+  Lead5Style,
   Body1Style,
   Body2Style,
   Body3Style,

@@ -5,6 +5,7 @@ import {
   ItemCheckbox,
   CircleNumber,
   SquarePrice,
+  DropdownLabelNoStyle,
 } from "./Dropdown.elements";
 import { useEffect, useState } from "react";
 import {
@@ -13,16 +14,29 @@ import {
 } from "../input/checkbox/Checkbox.elements";
 import { Label3, Lead2, Lead3 } from "../typography/Typography";
 import { InputTextWrapper } from "../input/text/text.elements";
+import Image from "next/image";
 
-interface DropdownType {
+interface HomeDropdownType {
   children: React.ReactChild;
   style?: Object;
   label: String;
-  itemActive: Array<String>,
-  setItemActive?: any
+  itemActive: Array<String>;
+  setItemActive?: any;
 }
 
-const HomeDropdownHarga = ({ children, style, label, itemActive, setItemActive }: DropdownType) => {
+interface KatalogDropdownType {
+  children: React.ReactChild;
+  style?: Object;
+  label: String;
+}
+
+const HomeDropdownHarga = ({
+  children,
+  style,
+  label,
+  itemActive,
+  setItemActive,
+}: HomeDropdownType) => {
   const [show, setShow] = useState(false);
   const [hargaMin, setHargaMin] = useState(0);
   const [hargaMax, setHargaMax] = useState(0);
@@ -31,19 +45,15 @@ const HomeDropdownHarga = ({ children, style, label, itemActive, setItemActive }
   useEffect(() => {
     if (hargaMax > 0) {
       if (!itemActive.includes("Harga")) {
-        setItemActive(() => ([
-          ...itemActive,
-          "Harga"
-        ]))
+        setItemActive(() => [...itemActive, "Harga"]);
       }
+    } else {
+      let index = itemActive.indexOf("Harga");
+      let itemTemp = [...itemActive];
+      itemTemp.splice(index, 1);
+      setItemActive(itemTemp);
     }
-    else {
-      let index = itemActive.indexOf("Harga")
-      let itemTemp = [...itemActive]
-      itemTemp.splice(index, 1)
-      setItemActive(itemTemp)
-    }
-  }, [hargaMax])
+  }, [hargaMax]);
 
   return (
     <DropdownWrapper style={style}>
@@ -66,7 +76,7 @@ const HomeDropdownHarga = ({ children, style, label, itemActive, setItemActive }
               fill="white"
             />
           </svg>
-        ) : (hargaMin > 0 || hargaMax > 0) && (semuaHarga == false) ? (
+        ) : (hargaMin > 0 || hargaMax > 0) && semuaHarga == false ? (
           <SquarePrice>
             <Label3 style={{ margin: "0" }}>ON</Label3>
           </SquarePrice>
@@ -122,7 +132,13 @@ const HomeDropdownHarga = ({ children, style, label, itemActive, setItemActive }
   );
 };
 
-const HomeDropdownBrand = ({ children, style, label, itemActive, setItemActive }: DropdownType) => {
+const HomeDropdownBrand = ({
+  children,
+  style,
+  label,
+  itemActive,
+  setItemActive,
+}: HomeDropdownType) => {
   const [show, setShow] = useState(false);
   const [statusCount, setStatusCount] = useState(0);
   const [status] = useState([
@@ -151,19 +167,15 @@ const HomeDropdownBrand = ({ children, style, label, itemActive, setItemActive }
   useEffect(() => {
     if (statusCount > 0) {
       if (!itemActive.includes("Brand")) {
-        setItemActive(() => ([
-          ...itemActive,
-          "Brand"
-        ]))
+        setItemActive(() => [...itemActive, "Brand"]);
       }
+    } else {
+      let index = itemActive.indexOf("Brand");
+      let itemTemp = [...itemActive];
+      itemTemp.splice(index, 1);
+      setItemActive(itemTemp);
     }
-    else {
-      let index = itemActive.indexOf("Brand")
-      let itemTemp = [...itemActive]
-      itemTemp.splice(index, 1)
-      setItemActive(itemTemp)
-    }
-  }, [statusCount])
+  }, [statusCount]);
 
   const changeStatusCount = async () => {
     let count = 0;
@@ -236,7 +248,13 @@ const HomeDropdownBrand = ({ children, style, label, itemActive, setItemActive }
   );
 };
 
-const HomeDropdownKategori = ({ children, style, label, itemActive, setItemActive }: DropdownType) => {
+const HomeDropdownKategori = ({
+  children,
+  style,
+  label,
+  itemActive,
+  setItemActive,
+}: HomeDropdownType) => {
   const [show, setShow] = useState(false);
   const [statusCount, setStatusCount] = useState(0);
   const [status] = useState([
@@ -261,19 +279,15 @@ const HomeDropdownKategori = ({ children, style, label, itemActive, setItemActiv
   useEffect(() => {
     if (statusCount > 0) {
       if (!itemActive.includes("Kategori")) {
-        setItemActive(() => ([
-          ...itemActive,
-          "Kategori"
-        ]))
+        setItemActive(() => [...itemActive, "Kategori"]);
       }
+    } else {
+      let index = itemActive.indexOf("Kategori");
+      let itemTemp = [...itemActive];
+      itemTemp.splice(index, 1);
+      setItemActive(itemTemp);
     }
-    else {
-      let index = itemActive.indexOf("Kategori")
-      let itemTemp = [...itemActive]
-      itemTemp.splice(index, 1)
-      setItemActive(itemTemp)
-    }
-  }, [statusCount])
+  }, [statusCount]);
 
   const changeStatusCount = async () => {
     let count = 0;
@@ -346,4 +360,222 @@ const HomeDropdownKategori = ({ children, style, label, itemActive, setItemActiv
   );
 };
 
-export { HomeDropdownHarga, HomeDropdownBrand, HomeDropdownKategori };
+const KatalogDropdownHarga = ({
+  children,
+  style,
+  label,
+}: KatalogDropdownType) => {
+  const [show, setShow] = useState(true);
+  const [hargaMin, setHargaMin] = useState(0);
+  const [hargaMax, setHargaMax] = useState(0);
+  const [semuaHarga, setSemuaHarga] = useState(true);
+
+  return (
+    <DropdownWrapper style={style}>
+      <DropdownLabelNoStyle
+        onClick={() => {
+          setShow(!show);
+        }}
+      >
+        {children}
+        {show ? (
+          <Image src="/arrow-drop-down.svg" width={24} height={24} />
+        ) : (
+          <Image src="/arrow-drop-up.svg" width={24} height={24} />
+        )}
+      </DropdownLabelNoStyle>
+      <DropdownItems show={show} style={{ padding: "8px 0 0 0" }}>
+        <ItemCheckbox>
+          <InputTextWrapper>
+            <Lead3 style={{ margin: "0 12px 0 0" }}>Rp</Lead3>
+            <input
+              onChange={(e) => setHargaMin(parseInt(e.target.value))}
+              type="number"
+              placeholder="Harga Minimum"
+            />
+          </InputTextWrapper>
+          <InputTextWrapper>
+            <Lead3 style={{ margin: "0 12px 0 0" }}>Rp</Lead3>
+            <input
+              onChange={(e) => setHargaMax(parseInt(e.target.value))}
+              type="number"
+              placeholder="Harga Maksimum"
+            />
+          </InputTextWrapper>
+          <CheckboxWrapper>
+            <CheckboxBox
+              onChange={() => {
+                setSemuaHarga(!semuaHarga);
+              }}
+              type="checkbox"
+              id="semua-harga"
+              checked={semuaHarga}
+            />
+            <label htmlFor={"semua-harga"}>
+              <Lead3 style={{ margin: "0" }}>Semua Harga</Lead3>
+            </label>
+          </CheckboxWrapper>
+        </ItemCheckbox>
+      </DropdownItems>
+    </DropdownWrapper>
+  );
+};
+
+const KatalogDropdownBrand = ({
+  children,
+  style,
+  label,
+}: KatalogDropdownType) => {
+  const [show, setShow] = useState(true);
+  const [statusCount, setStatusCount] = useState(0);
+  const [status] = useState([
+    {
+      label: "Acer",
+      status: false,
+    },
+    {
+      label: "Asus",
+      status: false,
+    },
+    {
+      label: "Apple",
+      status: false,
+    },
+    {
+      label: "Dell",
+      status: false,
+    },
+    {
+      label: "MSI",
+      status: false,
+    },
+  ]);
+
+  const changeStatusCount = async () => {
+    let count = 0;
+    status.forEach((stat) => {
+      if (stat.status) count++;
+    });
+    setStatusCount(count);
+  };
+
+  return (
+    <DropdownWrapper style={style}>
+      <DropdownLabelNoStyle
+        onClick={() => {
+          setShow(!show);
+        }}
+      >
+        {children}
+        {show ? (
+          <Image src="/arrow-drop-down.svg" width={24} height={24} />
+        ) : (
+          <Image src="/arrow-drop-up.svg" width={24} height={24} />
+        )}
+      </DropdownLabelNoStyle>
+      <DropdownItems show={show} style={{ padding: "0" }}>
+        <ItemCheckbox>
+          {status.map((stat, idx) => (
+            <CheckboxWrapper key={idx}>
+              <CheckboxBox
+                onClick={() => {
+                  status[idx].status = !status[idx].status;
+                }}
+                onChange={changeStatusCount}
+                type="checkbox"
+                id={idx.toString() + "HomeDropdownBrand" + stat.label}
+              />
+              <label
+                htmlFor={idx.toString() + "HomeDropdownBrand" + stat.label}
+              >
+                <Lead3 style={{ margin: "0" }}>{stat.label}</Lead3>
+              </label>
+            </CheckboxWrapper>
+          ))}
+        </ItemCheckbox>
+      </DropdownItems>
+    </DropdownWrapper>
+  );
+};
+
+const KatalogDropdownKategori = ({
+  children,
+  style,
+  label,
+}: KatalogDropdownType) => {
+  const [show, setShow] = useState(true);
+  const [statusCount, setStatusCount] = useState(0);
+  const [status] = useState([
+    {
+      label: "Gaming",
+      status: false,
+    },
+    {
+      label: "Editing",
+      status: false,
+    },
+    {
+      label: "Bisnis",
+      status: false,
+    },
+    {
+      label: "Kuliah",
+      status: false,
+    },
+  ]);
+
+  const changeStatusCount = async () => {
+    let count = 0;
+    status.forEach((stat) => {
+      if (stat.status) count++;
+    });
+    setStatusCount(count);
+  };
+
+  return (
+    <DropdownWrapper style={style}>
+      <DropdownLabelNoStyle
+        onClick={() => {
+          setShow(!show);
+        }}
+      >
+        {children}
+        {show ? (
+          <Image src="/arrow-drop-down.svg" width={24} height={24} />
+        ) : (
+          <Image src="/arrow-drop-up.svg" width={24} height={24} />
+        )}
+      </DropdownLabelNoStyle>
+      <DropdownItems show={show} style={{ padding: "0" }}>
+        <ItemCheckbox>
+          {status.map((stat, idx) => (
+            <CheckboxWrapper key={idx}>
+              <CheckboxBox
+                onClick={() => {
+                  status[idx].status = !status[idx].status;
+                }}
+                onChange={changeStatusCount}
+                type="checkbox"
+                id={idx.toString() + "HomeDropdownKategori" + stat.label}
+              />
+              <label
+                htmlFor={idx.toString() + "HomeDropdownKategori" + stat.label}
+              >
+                <Lead3 style={{ margin: "0" }}>{stat.label}</Lead3>
+              </label>
+            </CheckboxWrapper>
+          ))}
+        </ItemCheckbox>
+      </DropdownItems>
+    </DropdownWrapper>
+  );
+};
+
+export {
+  HomeDropdownHarga,
+  HomeDropdownBrand,
+  HomeDropdownKategori,
+  KatalogDropdownHarga,
+  KatalogDropdownBrand,
+  KatalogDropdownKategori,
+};

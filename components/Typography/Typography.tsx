@@ -20,11 +20,12 @@ import {
   Lead4Style,
   SH4Style,
   SH5Style,
+  Lead5Style,
 } from "./Typography.elements";
 
 interface TypographyType {
   className?: string;
-  children: React.ReactChild;
+  children: React.ReactChild | React.ReactChild[];
   style?: Object
 }
 
@@ -80,6 +81,10 @@ const Lead4 = ({ className, children, style }: TypographyType) => {
   return <Lead4Style className={className} style={style}>{children}</Lead4Style>;
 };
 
+const Lead5 = ({ className, children, style }: TypographyType) => {
+  return <Lead5Style className={className} style={style}>{children}</Lead5Style>;
+};
+
 const Body1 = ({ className, children, style }: TypographyType) => {
   return <Body1Style className={className} style={style}>{children}</Body1Style>;
 };
@@ -126,6 +131,7 @@ export {
   Lead2,
   Lead3,
   Lead4,
+  Lead5,
   Body1,
   Body2,
   Body3,

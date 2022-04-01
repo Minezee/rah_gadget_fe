@@ -19,6 +19,13 @@ const DropdownLabel = styled.div`
   border-radius: 5px;
 `;
 
+const DropdownLabelNoStyle = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
 const DropdownItems = styled.div<{ show: Boolean }>`
   ${(props) =>
     props.show
@@ -57,11 +64,10 @@ const SquarePrice = styled.div`
 
 const ItemCheckbox = styled.div``;
 
-
-
 export {
   DropdownWrapper,
   DropdownLabel,
+  DropdownLabelNoStyle,
   DropdownItems,
   ItemCheckbox,
   CircleNumber,
