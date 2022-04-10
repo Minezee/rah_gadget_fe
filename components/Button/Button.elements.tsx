@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { mainColor, textColor } from "../../styles/mixin";
+import { backgroundColor, mainColor, textColor } from "../../styles/mixin";
 
 const RemoveButtonStyle = styled.button`
   background: none;
@@ -141,10 +141,53 @@ const ButtonAlternativeLinkStyle = styled(RemoveButtonStyle)`
   }
 `;
 
+const ButtonArrowHyperlinkStyle = styled(RemoveButtonStyle)`
+  padding: 20px 0;
+  height: 64px;
+  width: 339px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: .2s;
+
+  &.btn-red {
+    border: 2px solid ${mainColor.secondary};
+    color: ${mainColor.secondary};
+  }
+
+  &.btn-red:hover {
+    background: ${mainColor.secondary};
+    color: ${backgroundColor.whiteCard};
+  }
+
+  &.btn-white {
+    border: 2px solid ${backgroundColor.whiteCard};
+    color: ${backgroundColor.whiteCard};
+  }
+
+  &.btn-white:hover {
+    background: ${backgroundColor.whiteCard};
+    color: ${mainColor.secondary};
+  }
+
+  & > :first-child {
+    margin-right: 20px;
+  }
+
+  &:hover {
+    transition: .2s;
+    color: white;
+  }
+`;
+
 export {
   ButtonArrowStyle,
   ButtonCTAStyle,
   ButtonCarouselStyle,
   ButtonLinkStyle,
   ButtonAlternativeLinkStyle,
+  ButtonArrowHyperlinkStyle,
 };

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
+import { mainColor } from "../../styles/mixin";
 import { Lead1 } from "../typography/Typography";
 import {
   ButtonCarouselStyle,
@@ -7,6 +8,7 @@ import {
   ButtonArrowStyle,
   ButtonLinkStyle,
   ButtonAlternativeLinkStyle,
+  ButtonArrowHyperlinkStyle,
 } from "./Button.elements";
 
 interface ButtonType {
@@ -63,7 +65,7 @@ const ButtonCarouselLeft = ({
 }: {
   onClick?: any;
   className?: string;
-  style?: Object
+  style?: Object;
 }) => {
   return (
     <ButtonCarouselStyle className={className} onClick={onClick} style={style}>
@@ -93,7 +95,7 @@ const ButtonCarouselRight = ({
 }: {
   onClick?: any;
   className?: string;
-  style?: Object
+  style?: Object;
 }) => {
   return (
     <ButtonCarouselStyle className={className} onClick={onClick} style={style}>
@@ -155,6 +157,45 @@ const ButtonAlternativeLink = ({
   );
 };
 
+const ButtonArrowHyperlink = ({
+  children,
+  onClick,
+  style,
+  className,
+}: {
+  children: string;
+  className: string;
+  style?: Object;
+  onClick?: any;
+}) => {
+  const [isHovering, setIsHovered] = useState(false);
+  const onMouseEnter = () => setIsHovered(true);
+  const onMouseLeave = () => setIsHovered(false);
+
+  return (
+    <ButtonArrowHyperlinkStyle
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+      style={style}
+      onClick={onClick}
+      className={className}
+    >
+      <Lead1>{children}</Lead1>
+      {className === "btn-red" ? (
+        isHovering ? (
+          <Image src="/arrow-up-right-white.svg" width={24} height={24} />
+        ) : (
+          <Image src="/arrow-up-right-red.svg" width={24} height={24} />
+        )
+      ) : isHovering ? (
+        <Image src="/arrow-up-right-red.svg" width={24} height={24} />
+      ) : (
+        <Image src="/arrow-up-right-white.svg" width={24} height={24} />
+      )}
+    </ButtonArrowHyperlinkStyle>
+  );
+};
+
 export {
   ButtonArrow,
   ButtonCTA,
@@ -162,4 +203,5 @@ export {
   ButtonCarouselRight,
   ButtonLink,
   ButtonAlternativeLink,
+  ButtonArrowHyperlink,
 };

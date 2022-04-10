@@ -4,7 +4,7 @@ import { NavbarItem } from "../components/navbar/Navbar.elements";
 
 interface LayoutNonIndicatorType {
   children: JSX.Element | JSX.Element[],
-  style: Object
+  style?: Object
 }
 
 const LayoutNonIndicator = ({ children, style }: LayoutNonIndicatorType) => {

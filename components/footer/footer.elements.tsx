@@ -7,7 +7,6 @@ const FooterWrapper = styled.div`
   height: 380px;
   background-color: black;
   background-image: url(/footer-bg.png);
-  margin-top: 118px;
 `;
 
 const FooterContainer = styled(Container)``;
