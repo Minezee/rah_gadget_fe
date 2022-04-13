@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
+import { labelColor, labelColorTypes } from "../../../styles/mixin";
 import { ButtonLink } from "../../button/Button";
 import {
   OtherProductLabel,
@@ -13,20 +14,20 @@ const CardInfoShopeeLink = () => {
     img: "",
     title: "Acer Predator Nitro 5 AN515-52",
     price: "10.799.000",
-    type: ["Editing", "Gaming"],
+    type: ["editing", "gaming"],
     desc: "Walaupun jadi yang paling murah, secara keseluruhan smartphone ini masih layak pakai untuk kebutuhan keseharian.",
   });
 
   return (
     <CardInfoShopeeLinkWrapper>
       <div>
-        <Image src="/jumbo-laptop.png" layout="fill" objectFit="contain" />
+        <Image src="/jumbo-laptop.png" layout="fill" objectFit="contain" alt="img-exam" />
       </div>
       <div>
         <Lead1 style={{ margin: "0 0 8px 0" }}>{data.title}</Lead1>
         <OtherProductLabelWrapper>
-          {data?.type?.map((labelProd) => (
-            <OtherProductLabel label={labelProd.toLowerCase()}>
+          {data?.type?.map((labelProd, idx) => (
+            <OtherProductLabel label={labelProd as labelColorTypes} key={idx}>
               <Label3 style={{ margin: "0" }}>{labelProd}</Label3>
             </OtherProductLabel>
           ))}

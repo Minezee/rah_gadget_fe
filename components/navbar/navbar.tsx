@@ -19,7 +19,7 @@ const Navbar = ({ children, indicator, percentage }: propsType) => {
     <NavbarIndicatorWrapper>
       <NavbarWrapper>
         <NavbarLogoWrapper>
-          <Image src="/nav-rg-logo.svg" width="201" height="37" />
+          <Image src="/nav-rg-logo.svg" width="201" height="37" alt="rg-logo" />
         </NavbarLogoWrapper>
         <NavbarItemWrapper>
           {children}

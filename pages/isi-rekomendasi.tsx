@@ -103,6 +103,7 @@ const IsiRekomendasi = () => {
                 src="/jumbo-laptop.png"
                 layout="fill"
                 objectFit="contain"
+                alt="img-exam"
               />
             </MainContentIntroImage>
             <MainContentBoxDesc
@@ -140,6 +141,7 @@ const IsiRekomendasi = () => {
                       src="/jumbo-laptop.png"
                       layout="fill"
                       objectFit="contain"
+                      alt="img-exam"
                     />
                   </ImageBox>
                   <MainContentBoxDesc
@@ -161,6 +163,7 @@ const IsiRekomendasi = () => {
                       src="/jumbo-laptop.png"
                       layout="fill"
                       objectFit="contain"
+                      alt="img-exam"
                     />
                   </ImageBox>
                   <MainContentBoxDesc
@@ -266,22 +269,22 @@ const IsiRekomendasi = () => {
                 <div>
                   <SH3 style={{ margin: "0 0 10px 0" }}>Kelebihan</SH3>
                   <PlusMinusItem>
-                    <Image src="/plus-logo.svg" width={20} height={20} />
+                    <Image src="/plus-logo.svg" width={20} height={20} alt="plus-logo" />
                     <Lead3>Desain cukup atraktif</Lead3>
                   </PlusMinusItem>
                   <PlusMinusItem>
-                    <Image src="/plus-logo.svg" width={20} height={20} />
+                    <Image src="/plus-logo.svg" width={20} height={20} alt="plus-logo" />
                     <Lead3>Layar besar</Lead3>
                   </PlusMinusItem>
                   <PlusMinusItem>
-                    <Image src="/plus-logo.svg" width={20} height={20} />
+                    <Image src="/plus-logo.svg" width={20} height={20} alt="plus-logo" />
                     <Lead3>Baterai awet</Lead3>
                   </PlusMinusItem>
                 </div>
                 <div>
                   <SH3 style={{ margin: "0 0 10px 0" }}>Kekurangan</SH3>
                   <PlusMinusItem>
-                    <Image src="/minus-logo.svg" width={20} height={20} />
+                    <Image src="/minus-logo.svg" width={20} height={20} alt="minus-logo" />
                     <Lead3>Kualitas kamera bukan yang terbaik</Lead3>
                   </PlusMinusItem>
                 </div>
@@ -313,6 +316,7 @@ const IsiRekomendasi = () => {
                       src="/jumbo-laptop.png"
                       layout="fill"
                       objectFit="contain"
+                      alt="img-exam"
                     />
                   </ImageBox>
                   <MainContentBoxDesc
@@ -334,6 +338,7 @@ const IsiRekomendasi = () => {
                       src="/jumbo-laptop.png"
                       layout="fill"
                       objectFit="contain"
+                      alt="img-exam"
                     />
                   </ImageBox>
                   <MainContentBoxDesc
@@ -439,22 +444,22 @@ const IsiRekomendasi = () => {
                 <div>
                   <SH3 style={{ margin: "0 0 10px 0" }}>Kelebihan</SH3>
                   <PlusMinusItem>
-                    <Image src="/plus-logo.svg" width={20} height={20} />
+                    <Image src="/plus-logo.svg" width={20} height={20} alt="plus-logo" />
                     <Lead3>Desain cukup atraktif</Lead3>
                   </PlusMinusItem>
                   <PlusMinusItem>
-                    <Image src="/plus-logo.svg" width={20} height={20} />
+                    <Image src="/plus-logo.svg" width={20} height={20} alt="plus-logo" />
                     <Lead3>Layar besar</Lead3>
                   </PlusMinusItem>
                   <PlusMinusItem>
-                    <Image src="/plus-logo.svg" width={20} height={20} />
+                    <Image src="/plus-logo.svg" width={20} height={20} alt="plus-logo" />
                     <Lead3>Baterai awet</Lead3>
                   </PlusMinusItem>
                 </div>
                 <div>
                   <SH3 style={{ margin: "0 0 10px 0" }}>Kekurangan</SH3>
                   <PlusMinusItem>
-                    <Image src="/minus-logo.svg" width={20} height={20} />
+                    <Image src="/minus-logo.svg" width={20} height={20} alt="minus-logo" />
                     <Lead3>Kualitas kamera bukan yang terbaik</Lead3>
                   </PlusMinusItem>
                 </div>

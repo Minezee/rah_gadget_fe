@@ -37,13 +37,13 @@ const TentangKami = () => {
   return (
     <LayoutNonIndicator>
       <TentangKamiJumbotron>
-        <Image src="/rg-tentang-kami-jumbo.svg" width={890} height={136.01} />
+        <Image src="/rg-tentang-kami-jumbo.svg" width={890} height={136.01} alt="img-exam" />
         <Lead6>Bersama Menjadi Pembeli Yang Bijak</Lead6>
       </TentangKamiJumbotron>
       <Container style={{ maxWidth: "944px", margin:"80px auto 116px auto" }}>
         <Lead7 style={{ textAlign: "justify" }}>
           Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
           scrambled it to make a type specimen book.
         </Lead7>
@@ -51,7 +51,7 @@ const TentangKami = () => {
 
       <Container style={{ maxWidth: "1100px" }}>
         <TentangKamiTitleBox>
-          <Image src="/youtube-text.svg" width={291} height={80} />
+          <Image src="/youtube-text.svg" width={291} height={80} alt="img-exam" />
           <div className="line-separator"></div>
           <Lead1 style={{ color: mainColor.secondary }}>01/2019 - NOW</Lead1>
         </TentangKamiTitleBox>
@@ -66,7 +66,7 @@ const TentangKami = () => {
               <SH6 style={{ margin: "0" }}>LOREM IPSUM</SH6>
               <Lead8 style={{ textAlign: "justify", margin: "28px 0 0 0" }}>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
+                industry. Lorem Ipsum has been the industry&apos;s standard dummy
                 text ever since the 1500s. Lorem Ipsum is simply dummy text.
               </Lead8>
               <ButtonArrowHyperlink
@@ -86,11 +86,11 @@ const TentangKami = () => {
           <TentangKamiIg>
             <TentangKamiIgImg></TentangKamiIgImg>
             <TentangKamiIgContent>
-              <Image src="/instagram-text.svg" width={291} height={80} />
+              <Image src="/instagram-text.svg" width={291} height={80} alt="img-exam" />
               <SH6 style={{ margin: "44px 0 0 0" }}>LOREM IPSUM</SH6>
               <Lead8 style={{ textAlign: "justify", margin: "28px 0 0 0" }}>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
+                industry. Lorem Ipsum has been the industry&apos;s standard dummy
                 text ever since the 1500s. Lorem Ipsum is simply dummy text.
               </Lead8>
               <ButtonArrowHyperlink
@@ -110,13 +110,13 @@ const TentangKami = () => {
             <TentangKamiTiktokWrapper>
               <TentangKamiTiktokContent>
                 <TentangKamiTiktokTitleImg>
-                  <Image src="/tiktok-text.svg" layout="fill" />
+                  <Image src="/tiktok-text.svg" layout="fill" alt="img-exam" />
                 </TentangKamiTiktokTitleImg>
                 <TentangKamiTiktokText>
                   <SH6 style={{ margin: "44px 0 0 0" }}>LOREM IPSUM</SH6>
                   <Lead8 style={{ textAlign: "justify", margin: "28px 0 0 0" }}>
                     Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
+                    typesetting industry. Lorem Ipsum has been the industry&apos;s
                     standard dummy text ever since the 1500s. Lorem Ipsum is
                     simply dummy text.
                   </Lead8>

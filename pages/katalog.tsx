@@ -54,7 +54,7 @@ const Katalog = () => {
           <KatalogFilter>
             <KatalogFilterHead>
               <Lead1>Filter Pencarian</Lead1>
-              <Image src="/refresh-filter-logo.svg" width={24} height={24} />
+              <Image src="/refresh-filter-logo.svg" width={24} height={24} alt="refresh-logo" />
             </KatalogFilterHead>
             <KatalogFilterBody>
               <KatalogDropdownHarga label={"harga"} style={{width: "100%", height: "100%", margin: "0 0 16px 0"}}>
@@ -70,7 +70,7 @@ const Katalog = () => {
           </KatalogFilter>
           <KatalogMainContent>
             <KatalogSearchbar>
-              <Image src="/katalog-search-logo.svg" width={24} height={24} />
+              <Image src="/katalog-search-logo.svg" width={24} height={24} alt="search-logo" />
               <InputField
                 type="text"
                 style={{ paddingLeft: "36px" }}
@@ -85,7 +85,7 @@ const Katalog = () => {
                 <KatalogSortType>
                   <Lead3>Berdasarkan harga</Lead3>
                 </KatalogSortType>
-                <Image src="/arrow-down-sort.svg" width={24} height={24} />
+                <Image src="/arrow-down-sort.svg" width={24} height={24} alt="arrow-logo" />
               </KatalogSortTypeWrapper>
             </KatalogSortWrapper>
             <ListProduct>
@@ -93,7 +93,7 @@ const Katalog = () => {
               <CardInfoShopeeLink></CardInfoShopeeLink>
               <PaginationWrapper>
                 <PagingButtonArrow>
-                  <Image src="/paging-arrow-left.svg" width={32} height={32} />
+                  <Image src="/paging-arrow-left.svg" width={32} height={32} alt="arrow-logo" />
                 </PagingButtonArrow>
                 <NumberList>
                   <SH3>1</SH3>
@@ -101,7 +101,7 @@ const Katalog = () => {
                   <SH3>3</SH3>
                 </NumberList>
                 <PagingButtonArrow>
-                  <Image src="/paging-arrow-right.svg" width={32} height={32} />
+                  <Image src="/paging-arrow-right.svg" width={32} height={32} alt="arrow-logo" />
                 </PagingButtonArrow>
               </PaginationWrapper>
             </ListProduct>

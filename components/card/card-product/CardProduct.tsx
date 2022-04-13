@@ -36,7 +36,7 @@ const CardProduct = ({ rating, label, type }: CardProductType) => {
     <CardProductWrapper>
       <ProductImage>
         <ProductType label={label} type={type} />
-        <Image src="/laptop-example.png" width="250" height="210"></Image>
+        <Image src="/laptop-example.png" width="250" height="210" alt="img-exam"></Image>
       </ProductImage>
       <ProductInfo>
         <ProductTitle>Asus Vivobook A409JA</ProductTitle>

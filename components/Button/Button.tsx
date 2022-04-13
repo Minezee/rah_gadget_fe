@@ -121,7 +121,7 @@ const ButtonCarouselRight = ({
 const ButtonLink = ({ children, onClick, className, style }: ButtonType) => {
   return (
     <ButtonLinkStyle className={className} onClick={onClick} style={style}>
-      <Image src="/shopee-logo-white.png" width="24" height="24"></Image>
+      <Image src="/shopee-logo-white.png" width="24" height="24" alt="shopee-logo"></Image>
       <div className="button-margin"></div>
       <Lead1>{children}</Lead1>
     </ButtonLinkStyle>
@@ -147,9 +147,9 @@ const ButtonAlternativeLink = ({
       style={style}
     >
       {isHovering ? (
-        <Image src="/shopee-logo-white.png" width="24" height="24"></Image>
+        <Image src="/shopee-logo-white.png" width="24" height="24" alt="shopee-logo"></Image>
       ) : (
-        <Image src="/shopee-logo-orange.png" width="24" height="24"></Image>
+        <Image src="/shopee-logo-orange.png" width="24" height="24" alt="shopee-logo"></Image>
       )}
       <div className="button-margin"></div>
       <Lead1>{children}</Lead1>
@@ -183,14 +183,14 @@ const ButtonArrowHyperlink = ({
       <Lead1>{children}</Lead1>
       {className === "btn-red" ? (
         isHovering ? (
-          <Image src="/arrow-up-right-white.svg" width={24} height={24} />
+          <Image src="/arrow-up-right-white.svg" width={24} height={24} alt="arrow-logo" />
         ) : (
-          <Image src="/arrow-up-right-red.svg" width={24} height={24} />
+          <Image src="/arrow-up-right-red.svg" width={24} height={24} alt="arrow-logo" />
         )
       ) : isHovering ? (
-        <Image src="/arrow-up-right-red.svg" width={24} height={24} />
+        <Image src="/arrow-up-right-red.svg" width={24} height={24} alt="arrow-logo" />
       ) : (
-        <Image src="/arrow-up-right-white.svg" width={24} height={24} />
+        <Image src="/arrow-up-right-white.svg" width={24} height={24} alt="arrow-logo" />
       )}
     </ButtonArrowHyperlinkStyle>
   );

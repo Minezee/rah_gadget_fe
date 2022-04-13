@@ -113,6 +113,7 @@ const IsiReview = () => {
                 src="/jumbo-laptop.png"
                 layout="fill"
                 objectFit="contain"
+                alt="img-exam"
               />
             </MainContentIntroImage>
             <MainContentBoxDesc
@@ -164,6 +165,7 @@ const IsiReview = () => {
                     src="/jumbo-laptop.png"
                     layout="fill"
                     objectFit="contain"
+                    alt="img-exam"
                   />
                 </ImageBox>
                 <MainContentBoxDesc
@@ -185,6 +187,7 @@ const IsiReview = () => {
                     src="/jumbo-laptop.png"
                     layout="fill"
                     objectFit="contain"
+                    alt="img-exam"
                   />
                 </ImageBox>
                 <MainContentBoxDesc
@@ -221,6 +224,7 @@ const IsiReview = () => {
                     src="/jumbo-laptop.png"
                     layout="fill"
                     objectFit="contain"
+                    alt="img-exam"
                   />
                 </ImageBox>
                 <MainContentBoxDesc
@@ -242,6 +246,7 @@ const IsiReview = () => {
                     src="/jumbo-laptop.png"
                     layout="fill"
                     objectFit="contain"
+                    alt="img-exam"
                   />
                 </ImageBox>
                 <MainContentBoxDesc
@@ -298,6 +303,7 @@ const IsiReview = () => {
                 src="/jumbo-laptop.png"
                 layout="fill"
                 objectFit="contain"
+                alt="img-exam"
               />
             </MainContentIntroImage>
             <MainContentBoxDesc
@@ -334,7 +340,7 @@ const IsiReview = () => {
             </Body1>
           </MainContent>
           <ProductLinkWrapper>
-            <Image src="/shopee-logo.png" width={180} height={57.59} />
+            <Image src="/shopee-logo.png" width={180} height={57.59} alt="shopee-logo" />
             <div className="logo-link-margin"></div>
             <CardShopeeLink style={{ margin: "8px 0" }}></CardShopeeLink>
             <CardShopeeLink style={{ margin: "8px 0" }}></CardShopeeLink>
@@ -406,22 +412,22 @@ const IsiReview = () => {
             <div>
               <SH3 style={{margin: "0 0 10px 0"}}>Kelebihan</SH3>
               <PlusMinusItem>
-                <Image src="/plus-logo.svg" width={20} height={20} />
+                <Image src="/plus-logo.svg" width={20} height={20} alt="plus-logo" />
                 <Lead3>Desain cukup atraktif</Lead3>
               </PlusMinusItem>
               <PlusMinusItem>
-                <Image src="/plus-logo.svg" width={20} height={20} />
+                <Image src="/plus-logo.svg" width={20} height={20} alt="plus-logo" />
                 <Lead3>Layar besar</Lead3>
               </PlusMinusItem>
               <PlusMinusItem>
-                <Image src="/plus-logo.svg" width={20} height={20} />
+                <Image src="/plus-logo.svg" width={20} height={20} alt="plus-logo" />
                 <Lead3>Baterai awet</Lead3>
               </PlusMinusItem>
             </div>
             <div>
               <SH3 style={{margin: "0 0 10px 0"}}>Kekurangan</SH3>
               <PlusMinusItem>
-                <Image src="/minus-logo.svg" width={20} height={20} />
+                <Image src="/minus-logo.svg" width={20} height={20} alt="minus-logo" />
                 <Lead3>Kualitas kamera bukan yang terbaik</Lead3>
               </PlusMinusItem>
             </div>
@@ -532,11 +538,11 @@ const IsiReview = () => {
               <Lead1 style={{margin: "0"}}>Kelebihan</Lead1>
               <div>
                 <PlusMinusItem>
-                  <Image src="/plus-logo.svg" width={20} height={20} />
+                  <Image src="/plus-logo.svg" width={20} height={20} alt="plus-logo" />
                   <Body1>Desain cukup atraktif</Body1>
                 </PlusMinusItem>
                 <PlusMinusItem>
-                  <Image src="/plus-logo.svg" width={20} height={20} />
+                  <Image src="/plus-logo.svg" width={20} height={20} alt="plus-logo" />
                   <Body1>Desain cukup atraktif</Body1>
                 </PlusMinusItem>
               </div>
@@ -544,11 +550,11 @@ const IsiReview = () => {
               <Lead1 style={{margin: "0"}}>Kekurangan</Lead1>
               <div>
                 <PlusMinusItem>
-                  <Image src="/minus-logo.svg" width={20} height={20} />
+                  <Image src="/minus-logo.svg" width={20} height={20} alt="minus-logo" />
                   <Body1>Kualitas kamera bukan yang terbaik</Body1>
                 </PlusMinusItem>
                 <PlusMinusItem>
-                  <Image src="/minus-logo.svg" width={20} height={20} />
+                  <Image src="/minus-logo.svg" width={20} height={20} alt="minus-logo" />
                   <Body1>Kualitas kamera bukan yang terbaik</Body1>
                 </PlusMinusItem>
               </div>
