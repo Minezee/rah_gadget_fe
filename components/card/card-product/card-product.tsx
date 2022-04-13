@@ -1,6 +1,6 @@
 import Image from "next/image";
-import StarRating from "../../star-rating/StarRating";
-import { Label5 } from "../../typography/Typography";
+import StarRating from "../../star-rating/star-rating";
+import { Label5 } from "../../typography/typography";
 import {
   CardProductWrapper,
   ProductImage,
@@ -10,7 +10,7 @@ import {
   ProductRatingText,
   ProductTitle,
   ProductType,
-} from "./CardProduct.elements";
+} from "./card-product.elements";
 
 interface CardProductType {
   rating: number;

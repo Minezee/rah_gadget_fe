@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { useState } from "react";
 import { labelColorTypes } from "../../styles/mixin";
-import { ButtonArrow } from "../button/Button";
-import { Label3 } from "../typography/Typography";
+import { ButtonArrow } from "../button/button";
+import { Label3 } from "../typography/typography";
 import {
   OtherProductDesc,
   OtherProductImage,
@@ -10,7 +10,7 @@ import {
   OtherProductLabelWrapper,
   OtherProductTitle,
   OtherProductWrapper,
-} from "./OtherProduct.elements";
+} from "./other-product.elements";
 
 const OtherProduct = () => {
   const [data, setData] = useState([

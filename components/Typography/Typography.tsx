@@ -26,7 +26,7 @@ import {
   SH6Style,
   Lead8Style,
   Lead9Style,
-} from "./Typography.elements";
+} from "./typography.elements";
 
 interface TypographyType {
   className?: string;

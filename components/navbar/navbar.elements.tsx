@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { mainColor } from "../../styles/mixin";
-import { Container } from "../container/Container";
-import { Lead1 } from "../typography/Typography";
+import { Container } from "../container/container";
+import { Lead1 } from "../typography/typography";
 
 const NavbarIndicatorWrapper = styled.div`
   // position: sticky;

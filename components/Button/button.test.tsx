@@ -7,7 +7,7 @@ import {
 } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import TestRenderer from "react-test-renderer";
-import { ButtonArrow } from "./Button";
+import { ButtonArrow } from "./button";
 
 describe("Button arrow", () => {
   test("testing box", async () => {

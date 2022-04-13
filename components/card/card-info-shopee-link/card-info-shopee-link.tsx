@@ -1,13 +1,13 @@
 import Image from "next/image";
 import { useState } from "react";
 import { labelColor, labelColorTypes } from "../../../styles/mixin";
-import { ButtonLink } from "../../button/Button";
+import { ButtonLink } from "../../button/button";
 import {
   OtherProductLabel,
   OtherProductLabelWrapper,
-} from "../../other-product/OtherProduct.elements";
-import { Body1, Label3, Lead1 } from "../../typography/Typography";
-import { CardInfoShopeeLinkWrapper } from "./CardInfoShopeeLink.elements";
+} from "../../other-product/other-product.elements";
+import { Body1, Label3, Lead1 } from "../../typography/typography";
+import { CardInfoShopeeLinkWrapper } from "./card-info-shopee-link.elements";
 
 const CardInfoShopeeLink = () => {
   const [data, setData] = useState({

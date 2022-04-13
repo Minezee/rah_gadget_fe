@@ -2,8 +2,8 @@ import Image from "next/image";
 import {
   ButtonAlternativeLink,
   ButtonArrowHyperlink,
-} from "../components/button/Button";
-import { Container } from "../components/container/Container";
+} from "../components/button/button";
+import { Container } from "../components/container/container";
 import {
   TentangKamiJumbotron,
   TentangKamiYtBox,
@@ -29,8 +29,8 @@ import {
   Lead7,
   Lead8,
   SH6,
-} from "../components/typography/Typography";
-import LayoutNonIndicator from "../layouts/LayoutNonIndicator";
+} from "../components/typography/typography";
+import LayoutNonIndicator from "../layouts/layout-non-indicator";
 import { mainColor } from "../styles/mixin";
 
 const TentangKami = () => {

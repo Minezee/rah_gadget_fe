@@ -1,9 +1,9 @@
-import { ButtonLink } from "../../button/Button";
-import { Body1, SH3 } from "../../typography/Typography";
+import { ButtonLink } from "../../button/button";
+import { Body1, SH3 } from "../../typography/typography";
 import {
   CardShopeeLinkInfo,
   CardShopeeLinkWrapper,
-} from "./CardShopeeLink.elements";
+} from "./card-shopee-link.elements";
 
 interface CardShopeeLinkType {
   style?: Object;

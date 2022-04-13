@@ -1,18 +1,18 @@
 import type { NextPage } from "next";
-import { H1, Label3, Lead2, SH2 } from "../components/typography/Typography";
+import { H1, Label3, Lead2, SH2 } from "../components/typography/typography";
 import { useEffect, useState } from "react";
-import { Container } from "../components/container/Container";
-import Navbar from "../components/navbar/Navbar";
-import { NavbarItem } from "../components/navbar/Navbar.elements";
-import Footer from "../components/footer/Footer";
-import CardProduct from "../components/card/card-product/CardProduct";
-import CardReview from "../components/card/card-review/CardReview";
-import CardArticle from "../components/card/card-article/CardArticle";
+import { Container } from "../components/container/container";
+import Navbar from "../components/navbar/navbar";
+import { NavbarItem } from "../components/navbar/navbar.elements";
+import Footer from "../components/footer/footer";
+import CardProduct from "../components/card/card-product/card-product";
+import CardReview from "../components/card/card-review/card-review";
+import CardArticle from "../components/card/card-article/card-article";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../store/reducers";
 import { setSearchAttr } from "../store/actions/search";
-import SliderList from "../components/slider-list/SliderList";
-import ProductList from "../components/product-list/ProductList";
+import SliderList from "../components/slider-list/slider-list";
+import ProductList from "../components/product-list/product-list";
 import {
   InputField,
   Jumbotron,
@@ -30,12 +30,12 @@ import {
   RGAdsLeft,
   RGAdsRight,
 } from "../components/pages-component/index/index.elements";
-import CardLaptopCat from "../components/card/card-laptop-cat/CardLaptopCat";
-import BrandCard from "../components/card/brand-card/BrandCard";
-import { ButtonArrow } from "../components/button/Button";
-import { HomeDropdownBrand, HomeDropdownHarga, HomeDropdownKategori } from "../components/dropdown/Dropdown";
-import LayoutIndicator from "../layouts/LayoutIndicator";
-import LayoutNonIndicator from "../layouts/LayoutNonIndicator";
+import CardLaptopCat from "../components/card/card-laptop-cat/card-laptop-cat";
+import BrandCard from "../components/card/brand-card/brand-card";
+import { ButtonArrow } from "../components/button/button";
+import { HomeDropdownBrand, HomeDropdownHarga, HomeDropdownKategori } from "../components/dropdown/dropdown";
+import LayoutIndicator from "../layouts/layout-indicator";
+import LayoutNonIndicator from "../layouts/layout-non-indicator";
 
 const Home: NextPage = () => {
   const [searchItemActive, setSearchItemActive] = useState([]);

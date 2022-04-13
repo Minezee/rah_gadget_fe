@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { ButtonCarouselLeft, ButtonCarouselRight } from "../button/Button";
-import { SliderBox, SliderWrapper } from "./SliderList.elements";
+import { ButtonCarouselLeft, ButtonCarouselRight } from "../button/button";
+import { SliderBox, SliderWrapper } from "./slider-list.elements";
 
 interface ArticleListType {
   children: JSX.Element | JSX.Element[];

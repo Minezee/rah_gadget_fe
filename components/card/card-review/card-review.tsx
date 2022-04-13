@@ -1,4 +1,4 @@
-import { Lead2 } from "../../typography/Typography";
+import { Lead2 } from "../../typography/typography";
 import {
   CardReviewDesc,
   CardReviewInfo,
@@ -6,7 +6,7 @@ import {
   CardReviewRating,
   CardReviewTitle,
   CardReviewWrapper,
-} from "./CardReview.elements";
+} from "./card-review.elements";
 
 interface CardReviewType {
   style?: Object;

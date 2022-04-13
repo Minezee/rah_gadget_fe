@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { ButtonAlternativeLink, ButtonLink } from "../components/button/Button";
-import CardReview from "../components/card/card-review/CardReview";
-import CardShopeeLink from "../components/card/card-shopee-link/CardShopeeLink";
-import { Container } from "../components/container/Container";
+import { ButtonAlternativeLink, ButtonLink } from "../components/button/button";
+import CardReview from "../components/card/card-review/card-review";
+import CardShopeeLink from "../components/card/card-shopee-link/card-shopee-link";
+import { Container } from "../components/container/container";
 import {
   IsiReviewContainer,
   IsiReviewMainContent,
@@ -39,8 +39,8 @@ import {
   ReviewScoreDetail,
   NewestReview,
 } from "../components/pages-component/isi-review/isi-review.elements";
-import OtherProduct from "../components/other-product/OtherProduct";
-import StarRating from "../components/star-rating/StarRating";
+import OtherProduct from "../components/other-product/other-product";
+import StarRating from "../components/star-rating/star-rating";
 import {
   Body1,
   Body2,
@@ -56,8 +56,8 @@ import {
   SH3,
   SH4,
   SH5,
-} from "../components/typography/Typography";
-import LayoutIndicator from "../layouts/LayoutIndicator";
+} from "../components/typography/typography";
+import LayoutIndicator from "../layouts/layout-indicator";
 import { backgroundColor, mainColor, textColor } from "../styles/mixin";
 
 const IsiReview = () => {

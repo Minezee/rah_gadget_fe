@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { mainColor, labelColor } from "../../../styles/mixin";
-import { Body3Style, Lead2Style } from "../../typography/Typography.elements";
+import { Body3Style, Lead2Style } from "../../typography/typography.elements";
 
 const CardReviewWrapper = styled.div`
   width: 340px;

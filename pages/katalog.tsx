@@ -1,14 +1,14 @@
 import Image from "next/image";
 import { useState } from "react";
-import BrandCard from "../components/card/brand-card/BrandCard";
-import CardArticle from "../components/card/card-article/CardArticle";
-import CardInfoShopeeLink from "../components/card/card-info-shopee-link/CardInfoShopeeLink";
-import CardLaptopCat from "../components/card/card-laptop-cat/CardLaptopCat";
-import CardProduct from "../components/card/card-product/CardProduct";
-import CardRecommendationSideBar from "../components/card/card-recommendation-side-bar/CardRecommendationSideBar";
-import CardReview from "../components/card/card-review/CardReview";
-import CardShopeeLink from "../components/card/card-shopee-link/CardShopeeLink";
-import { Container } from "../components/container/Container";
+import BrandCard from "../components/card/brand-card/brand-card";
+import CardArticle from "../components/card/card-article/card-article";
+import CardInfoShopeeLink from "../components/card/card-info-shopee-link/card-info-shopee-link";
+import CardLaptopCat from "../components/card/card-laptop-cat/card-laptop-cat";
+import CardProduct from "../components/card/card-product/card-product";
+import CardRecommendationSideBar from "../components/card/card-recommendation-side-bar/card-recommendation-sidebar";
+import CardReview from "../components/card/card-review/card-review";
+import CardShopeeLink from "../components/card/card-shopee-link/card-shopee-link";
+import { Container } from "../components/container/container";
 import {
   HomeDropdownBrand,
   HomeDropdownHarga,
@@ -16,7 +16,7 @@ import {
   KatalogDropdownBrand,
   KatalogDropdownHarga,
   KatalogDropdownKategori,
-} from "../components/dropdown/Dropdown";
+} from "../components/dropdown/dropdown";
 import { InputField } from "../components/pages-component/index/index.elements";
 import {
   KatalogFilter,
@@ -39,8 +39,8 @@ import {
   Lead3,
   Lead5,
   SH3,
-} from "../components/typography/Typography";
-import LayoutNonIndicator from "../layouts/LayoutNonIndicator";
+} from "../components/typography/typography";
+import LayoutNonIndicator from "../layouts/layout-non-indicator";
 
 const Katalog = () => {
   const [searchItemActive, setSearchItemActive] = useState([]);
