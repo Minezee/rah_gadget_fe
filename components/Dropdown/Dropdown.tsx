@@ -379,9 +379,9 @@ const KatalogDropdownHarga = ({
       >
         {children}
         {show ? (
-          <Image src="/arrow-drop-down.svg" width={24} height={24} />
+          <Image src="/arrow-drop-down.svg" width={24} height={24} alt="arrow-logo" />
         ) : (
-          <Image src="/arrow-drop-up.svg" width={24} height={24} />
+          <Image src="/arrow-drop-up.svg" width={24} height={24} alt="arrow-logo" />
         )}
       </DropdownLabelNoStyle>
       <DropdownItems show={show} style={{ padding: "8px 0 0 0" }}>
@@ -468,9 +468,9 @@ const KatalogDropdownBrand = ({
       >
         {children}
         {show ? (
-          <Image src="/arrow-drop-down.svg" width={24} height={24} />
+          <Image src="/arrow-drop-down.svg" width={24} height={24} alt="arrow-logo" />
         ) : (
-          <Image src="/arrow-drop-up.svg" width={24} height={24} />
+          <Image src="/arrow-drop-up.svg" width={24} height={24} alt="arrow-logo" />
         )}
       </DropdownLabelNoStyle>
       <DropdownItems show={show} style={{ padding: "0" }}>
@@ -541,9 +541,9 @@ const KatalogDropdownKategori = ({
       >
         {children}
         {show ? (
-          <Image src="/arrow-drop-down.svg" width={24} height={24} />
+          <Image src="/arrow-drop-down.svg" width={24} height={24} alt="arrow-logo" />
         ) : (
-          <Image src="/arrow-drop-up.svg" width={24} height={24} />
+          <Image src="/arrow-drop-up.svg" width={24} height={24} alt="arrow-logo" />
         )}
       </DropdownLabelNoStyle>
       <DropdownItems show={show} style={{ padding: "0" }}>

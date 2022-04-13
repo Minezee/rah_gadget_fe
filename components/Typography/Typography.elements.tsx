@@ -1,8 +1,16 @@
 import styled from "styled-components";
 
 const RemoveTyphoStyle = styled.h1`
+  // margin: 0;
+  // padding: 0;
+  // font-weight: normal;
+  // font-style: normal;
   margin: 0;
-  padding: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 `;
 
 const H1Style = styled.h1`
@@ -149,6 +157,14 @@ const Lead8Style = styled.h1`
   line-height: 36px;
 `;
 
+const Lead9Style = styled.h1`
+  font-family: "Palanquin";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+`;
+
 const Body1Style = styled.h1`
   font-family: Work Sans;
   font-style: normal;
@@ -233,6 +249,7 @@ export {
   Lead6Style,
   Lead7Style,
   Lead8Style,
+  Lead9Style,
   Body1Style,
   Body2Style,
   Body3Style,

@@ -25,6 +25,7 @@ import {
   Lead6Style,
   SH6Style,
   Lead8Style,
+  Lead9Style,
 } from "./Typography.elements";
 
 interface TypographyType {
@@ -105,6 +106,10 @@ const Lead8 = ({ className, children, style }: TypographyType) => {
   return <Lead8Style className={className} style={style}>{children}</Lead8Style>;
 };
 
+const Lead9 = ({ className, children, style }: TypographyType) => {
+  return <Lead9Style className={className} style={style}>{children}</Lead9Style>;
+};
+
 const Body1 = ({ className, children, style }: TypographyType) => {
   return <Body1Style className={className} style={style}>{children}</Body1Style>;
 };
@@ -156,6 +161,7 @@ export {
   Lead6,
   Lead7,
   Lead8,
+  Lead9,
   Body1,
   Body2,
   Body3,

@@ -4,7 +4,7 @@ import Image from "next/image";
 const BrandCard = () => {
   return(
     <BrandCardWrapper>
-      <Image src="/exam-brand.png" layout="fill" objectFit="contain"></Image>
+      <Image src="/exam-brand.png" layout="fill" objectFit="contain" alt="img-exam"></Image>
     </BrandCardWrapper>
   )
 };
