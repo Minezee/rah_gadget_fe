@@ -3,8 +3,8 @@ import {
   CardReviewInfo,
   CardReviewLabel,
   CardReviewTitle,
-} from "../card-review/CardReview.elements";
-import { CardRecommendationSidebarWrapper } from "./CardRecommendationSideBar.elements";
+} from "../card-review/card-review.elements";
+import { CardRecommendationSidebarWrapper } from "./card-recommendation-sidebar.elements";
 
 const CardRecommendationSideBar = () => {
   return (

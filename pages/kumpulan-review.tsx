@@ -1,5 +1,5 @@
-import { Container } from "../components/container/Container";
-import OtherProduct from "../components/other-product/OtherProduct";
+import { Container } from "../components/container/container";
+import OtherProduct from "../components/other-product/other-product";
 import {
   ImageDesc,
   ImagesPreview,
@@ -15,8 +15,8 @@ import {
   Label3,
   Lead2,
   Lead9,
-} from "../components/typography/Typography";
-import LayoutNonIndicator from "../layouts/LayoutNonIndicator";
+} from "../components/typography/typography";
+import LayoutNonIndicator from "../layouts/layout-non-indicator";
 
 const KumpulanReview = () => {
   return (

@@ -1,5 +1,5 @@
-import { ButtonCTA } from "../../button/Button"
-import { CardArticleInfo, CardArticleInfoDate, CardArticleInfoTitle, CardArticleWrapper } from "./CardArticle.elements"
+import { ButtonCTA } from "../../button/button"
+import { CardArticleInfo, CardArticleInfoDate, CardArticleInfoTitle, CardArticleWrapper } from "./card-article.elements"
 
 const CardArticle = () => {
   return(

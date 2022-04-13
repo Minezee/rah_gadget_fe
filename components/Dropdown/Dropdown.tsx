@@ -6,13 +6,13 @@ import {
   CircleNumber,
   SquarePrice,
   DropdownLabelNoStyle,
-} from "./Dropdown.elements";
+} from "./dropdown.elements";
 import { useEffect, useState } from "react";
 import {
   CheckboxBox,
   CheckboxWrapper,
-} from "../input/checkbox/Checkbox.elements";
-import { Label3, Lead2, Lead3 } from "../typography/Typography";
+} from "../input/checkbox/checkbox.elements";
+import { Label3, Lead2, Lead3 } from "../typography/typography";
 import { InputTextWrapper } from "../input/text/text.elements";
 import Image from "next/image";
 

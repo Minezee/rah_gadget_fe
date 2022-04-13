@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import Footer from "../components/footer/Footer";
-import Navbar from "../components/navbar/Navbar";
-import { NavbarItem } from "../components/navbar/Navbar.elements";
+import Footer from "../components/footer/footer";
+import Navbar from "../components/navbar/navbar";
+import { NavbarItem } from "../components/navbar/navbar.elements";
 
 interface LayoutIndicatorType {
   children: JSX.Element | JSX.Element[];

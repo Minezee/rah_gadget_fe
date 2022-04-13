@@ -1,5 +1,5 @@
-import { Container } from "../container/Container";
-import { H4, Lead3, Lead1, H1 } from "../typography/Typography";
+import { Container } from "../container/container";
+import { H4, Lead3, Lead1, H1 } from "../typography/typography";
 import {
   FooterContent,
   FooterInfo,
@@ -10,7 +10,7 @@ import {
   SocialMediaIconBox,
   FooterCompanyTitle,
   FooterInfoRow,
-} from "./Footer.elements";
+} from "./footer.elements";
 import Image from "next/image";
 
 const Footer = () => {

@@ -1,4 +1,4 @@
-import { ContainerStyle } from "./Container.elements";
+import { ContainerStyle } from "./container.elements";
 
 interface ContainerType {
   children: JSX.Element | JSX.Element[];

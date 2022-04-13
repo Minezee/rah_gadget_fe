@@ -1,6 +1,6 @@
 import { ChangeEventHandler } from "react";
-import { Lead3 } from "../../typography/Typography";
-import { CheckboxBox, CheckboxWrapper } from "./Checkbox.elements";
+import { Lead3 } from "../../typography/typography";
+import { CheckboxBox, CheckboxWrapper } from "./checkbox.elements";
 
 // interface CheckboxType {
 //   ids: string;

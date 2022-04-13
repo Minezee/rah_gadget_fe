@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { backgroundColor, mainColor, textColor } from "../../../styles/mixin";
-import { ButtonCTA } from "../../button/Button";
-import { ContainerStyle } from "../../container/Container.elements";
-import { H1, SH2 } from "../../typography/Typography";
+import { ButtonCTA } from "../../button/button";
+import { ContainerStyle } from "../../container/container.elements";
+import { H1, SH2 } from "../../typography/typography";
 
 const RGAdsContainer = styled.div`
   width: 100%;

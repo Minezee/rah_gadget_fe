@@ -6,7 +6,7 @@ import {
   mainColor,
   textColor,
 } from "../../../styles/mixin";
-import { ContainerStyle } from "../../container/Container.elements";
+import { ContainerStyle } from "../../container/container.elements";
 
 const IsiReviewContainer = styled(ContainerStyle)`
   display: grid;

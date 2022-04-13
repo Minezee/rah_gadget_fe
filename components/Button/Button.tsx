@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { mainColor } from "../../styles/mixin";
-import { Lead1 } from "../typography/Typography";
+import { Lead1 } from "../typography/typography";
 import {
   ButtonCarouselStyle,
   ButtonCTAStyle,
@@ -9,7 +9,7 @@ import {
   ButtonLinkStyle,
   ButtonAlternativeLinkStyle,
   ButtonArrowHyperlinkStyle,
-} from "./Button.elements";
+} from "./button.elements";
 
 interface ButtonType {
   children: string;

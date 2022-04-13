@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { labelColor, labelColorTypes } from "../../styles/mixin";
-import { Body1Style, Lead2Style } from "../typography/Typography.elements";
+import { Body1Style, Lead2Style } from "../typography/typography.elements";
 
 interface OtherProductTypoType {
   children: React.ReactChild;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Container } from "../container/Container";
-import { H4Style } from "../typography/Typography.elements";
+import { Container } from "../container/container";
+import { H4Style } from "../typography/typography.elements";
 
 const FooterWrapper = styled.div`
   width: 100%;
