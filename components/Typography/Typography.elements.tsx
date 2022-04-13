@@ -1,8 +1,16 @@
 import styled from "styled-components";
 
 const RemoveTyphoStyle = styled.h1`
+  // margin: 0;
+  // padding: 0;
+  // font-weight: normal;
+  // font-style: normal;
   margin: 0;
-  padding: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 `;
 
 const H1Style = styled.h1`
@@ -77,6 +85,14 @@ const SH5Style = styled.h1`
   line-height: 44px;
 `;
 
+const SH6Style = styled.h1`
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+`;
+
 const Lead1Style = styled.h1`
   font-family: Work Sans;
   font-style: normal;
@@ -107,6 +123,46 @@ const Lead4Style = styled.h1`
   font-weight: 500;
   font-size: 32px;
   line-height: 44px;
+`;
+
+const Lead5Style = styled.h1`
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+`;
+
+const Lead6Style = styled.h1`
+  font-family: "Palanquin";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 80px;
+`;
+
+const Lead7Style = styled.h1`
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px;
+`;
+
+const Lead8Style = styled.h1`
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px;
+`;
+
+const Lead9Style = styled.h1`
+  font-family: "Palanquin";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
 `;
 
 const Body1Style = styled.h1`
@@ -184,10 +240,16 @@ export {
   SH3Style,
   SH4Style,
   SH5Style,
+  SH6Style,
   Lead1Style,
   Lead2Style,
   Lead3Style,
   Lead4Style,
+  Lead5Style,
+  Lead6Style,
+  Lead7Style,
+  Lead8Style,
+  Lead9Style,
   Body1Style,
   Body2Style,
   Body3Style,

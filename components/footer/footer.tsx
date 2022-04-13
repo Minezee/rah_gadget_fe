@@ -127,7 +127,7 @@ const Footer = () => {
             </FooterInfoRow>
             <FooterInfoRow>
               {/* Nanti tempat image rah gadget */}
-              <Image src="/footer-bg-rg.png" width="235" height="235"></Image>
+              <Image src="/footer-bg-rg.png" width="235" height="235" alt="img-exam"></Image>
             </FooterInfoRow>
           </FooterInfo>
           <Lead3>All Rights Reserved. 2022</Lead3>

@@ -20,11 +20,17 @@ import {
   Lead4Style,
   SH4Style,
   SH5Style,
+  Lead5Style,
+  Lead7Style,
+  Lead6Style,
+  SH6Style,
+  Lead8Style,
+  Lead9Style,
 } from "./Typography.elements";
 
 interface TypographyType {
   className?: string;
-  children: React.ReactChild;
+  children: React.ReactChild | React.ReactChild[];
   style?: Object
 }
 
@@ -64,6 +70,10 @@ const SH5 = ({ className, children, style }: TypographyType) => {
   return <SH5Style className={className} style={style}>{children}</SH5Style>;
 };
 
+const SH6 = ({ className, children, style }: TypographyType) => {
+  return <SH6Style className={className} style={style}>{children}</SH6Style>;
+};
+
 const Lead1 = ({ className, children, style }: TypographyType) => {
   return <Lead1Style className={className} style={style}>{children}</Lead1Style>;
 };
@@ -78,6 +88,26 @@ const Lead3 = ({ className, children, style }: TypographyType) => {
 
 const Lead4 = ({ className, children, style }: TypographyType) => {
   return <Lead4Style className={className} style={style}>{children}</Lead4Style>;
+};
+
+const Lead5 = ({ className, children, style }: TypographyType) => {
+  return <Lead5Style className={className} style={style}>{children}</Lead5Style>;
+};
+
+const Lead6 = ({ className, children, style }: TypographyType) => {
+  return <Lead6Style className={className} style={style}>{children}</Lead6Style>;
+};
+
+const Lead7 = ({ className, children, style }: TypographyType) => {
+  return <Lead7Style className={className} style={style}>{children}</Lead7Style>;
+};
+
+const Lead8 = ({ className, children, style }: TypographyType) => {
+  return <Lead8Style className={className} style={style}>{children}</Lead8Style>;
+};
+
+const Lead9 = ({ className, children, style }: TypographyType) => {
+  return <Lead9Style className={className} style={style}>{children}</Lead9Style>;
 };
 
 const Body1 = ({ className, children, style }: TypographyType) => {
@@ -122,10 +152,16 @@ export {
   SH3,
   SH4,
   SH5,
+  SH6,
   Lead1,
   Lead2,
   Lead3,
   Lead4,
+  Lead5,
+  Lead6,
+  Lead7,
+  Lead8,
+  Lead9,
   Body1,
   Body2,
   Body3,

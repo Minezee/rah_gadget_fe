@@ -3,13 +3,14 @@ import Navbar from "../components/navbar/Navbar";
 import { NavbarItem } from "../components/navbar/Navbar.elements";
 
 interface LayoutNonIndicatorType {
-  children: JSX.Element | JSX.Element[];
+  children: JSX.Element | JSX.Element[],
+  style?: Object
 }
 
-const LayoutNonIndicator = ({ children }: LayoutNonIndicatorType) => {
+const LayoutNonIndicator = ({ children, style }: LayoutNonIndicatorType) => {
 
   return (
-    <div>
+    <div style={style}>
       <Navbar>
         <NavbarItem>Home</NavbarItem>
         <NavbarItem>Rekomendasi</NavbarItem>

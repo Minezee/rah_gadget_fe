@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
+import { labelColorTypes } from "../../styles/mixin";
 import { ButtonArrow } from "../button/Button";
 import { Label3 } from "../typography/Typography";
 import {
@@ -25,12 +26,12 @@ const OtherProduct = () => {
     <div>
       <OtherProductWrapper>
         <OtherProductImage>
-          <Image src="/img-exam.jfif" layout="fill" objectFit="cover" />
+          <Image src="/img-exam.jfif" layout="fill" objectFit="cover" alt="img-exam" />
         </OtherProductImage>
         <div>
           <OtherProductLabelWrapper>
-            {data[0]?.type?.map((labelProd) => (
-              <OtherProductLabel label={labelProd}>
+            {data[0]?.type?.map((labelProd, idx) => (
+              <OtherProductLabel label={labelProd as labelColorTypes} key={idx}>
                 <Label3 style={{ margin: "0" }}>{labelProd}</Label3>
               </OtherProductLabel>
             ))}
@@ -46,12 +47,12 @@ const OtherProduct = () => {
       </OtherProductWrapper>
       <OtherProductWrapper>
         <OtherProductImage>
-          <Image src="/img-exam.jfif" layout="fill" objectFit="cover" />
+          <Image src="/img-exam.jfif" layout="fill" objectFit="cover" alt="img-exam" />
         </OtherProductImage>
         <div>
           <OtherProductLabelWrapper>
-            {data[0]?.type?.map((labelProd) => (
-              <OtherProductLabel label={labelProd}>
+            {data[0]?.type?.map((labelProd, idx) => (
+              <OtherProductLabel label={labelProd as labelColorTypes} key={idx}>
                 <Label3 style={{ margin: "0" }}>{labelProd}</Label3>
               </OtherProductLabel>
             ))}

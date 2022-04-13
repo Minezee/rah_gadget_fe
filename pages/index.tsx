@@ -14,7 +14,7 @@ import { setSearchAttr } from "../store/actions/search";
 import SliderList from "../components/slider-list/SliderList";
 import ProductList from "../components/product-list/ProductList";
 import {
-  InputLaptopName,
+  InputField,
   Jumbotron,
   JumbotronCirle1,
   JumbotronCirle2,
@@ -29,7 +29,7 @@ import {
   RGAdsContainer,
   RGAdsLeft,
   RGAdsRight,
-} from "../components/index/index.elements";
+} from "../components/pages-component/index/index.elements";
 import CardLaptopCat from "../components/card/card-laptop-cat/CardLaptopCat";
 import BrandCard from "../components/card/brand-card/BrandCard";
 import { ButtonArrow } from "../components/button/Button";
@@ -105,7 +105,7 @@ const Home: NextPage = () => {
                       </svg>
                     </JumbotronSearchItem>
                   ))}
-                  <InputLaptopName type="text" style={{ marginLeft: "16px" }} placeholder="Cari laptop ..." />
+                  <InputField type="text" style={{ paddingLeft: "16px" }} placeholder="Cari laptop ..." />
                 </JumbotronSearchField>
                 <JumbotronSearchButton>
                   <Lead2>Cari</Lead2>

@@ -7,7 +7,7 @@ import {
   ButtonBuyWrapper,
   PriceButton,
   ProductDescription,
-} from "../components/isi-rekomendasi/isi-rekomendasi.elements";
+} from "../components/pages-component/isi-rekomendasi/isi-rekomendasi.elements";
 import {
   IsiReviewContainer,
   IsiReviewMainContent,
@@ -43,7 +43,7 @@ import {
   ReviewScoreTitle,
   ReviewScoreDetail,
   NewestReview,
-} from "../components/isi-review/isi-review.elements";
+} from "../components/pages-component/isi-review/isi-review.elements";
 import OtherProduct from "../components/other-product/OtherProduct";
 import StarRating from "../components/star-rating/StarRating";
 import {
@@ -69,7 +69,7 @@ const IsiRekomendasi = () => {
   return (
     <LayoutIndicator style={{ paddingTop: "150px" }}>
       <Container>
-        <H2>Dell XPS 13 Plus: Desain Lebih Minimalis, Jauh Lebih Bertenaga</H2>
+        <H2>5 Laptop Gaming Dengan Harga 10 Jutaan Terbaik Tahun 2022</H2>
       </Container>
       <IsiReviewContainer>
         <IsiReviewMainContent>
@@ -103,6 +103,7 @@ const IsiRekomendasi = () => {
                 src="/jumbo-laptop.png"
                 layout="fill"
                 objectFit="contain"
+                alt="img-exam"
               />
             </MainContentIntroImage>
             <MainContentBoxDesc
@@ -140,6 +141,7 @@ const IsiRekomendasi = () => {
                       src="/jumbo-laptop.png"
                       layout="fill"
                       objectFit="contain"
+                      alt="img-exam"
                     />
                   </ImageBox>
                   <MainContentBoxDesc
@@ -161,6 +163,7 @@ const IsiRekomendasi = () => {
                       src="/jumbo-laptop.png"
                       layout="fill"
                       objectFit="contain"
+                      alt="img-exam"
                     />
                   </ImageBox>
                   <MainContentBoxDesc
@@ -266,22 +269,22 @@ const IsiRekomendasi = () => {
                 <div>
                   <SH3 style={{ margin: "0 0 10px 0" }}>Kelebihan</SH3>
                   <PlusMinusItem>
-                    <Image src="/plus-logo.svg" width={20} height={20} />
+                    <Image src="/plus-logo.svg" width={20} height={20} alt="plus-logo" />
                     <Lead3>Desain cukup atraktif</Lead3>
                   </PlusMinusItem>
                   <PlusMinusItem>
-                    <Image src="/plus-logo.svg" width={20} height={20} />
+                    <Image src="/plus-logo.svg" width={20} height={20} alt="plus-logo" />
                     <Lead3>Layar besar</Lead3>
                   </PlusMinusItem>
                   <PlusMinusItem>
-                    <Image src="/plus-logo.svg" width={20} height={20} />
+                    <Image src="/plus-logo.svg" width={20} height={20} alt="plus-logo" />
                     <Lead3>Baterai awet</Lead3>
                   </PlusMinusItem>
                 </div>
                 <div>
                   <SH3 style={{ margin: "0 0 10px 0" }}>Kekurangan</SH3>
                   <PlusMinusItem>
-                    <Image src="/minus-logo.svg" width={20} height={20} />
+                    <Image src="/minus-logo.svg" width={20} height={20} alt="minus-logo" />
                     <Lead3>Kualitas kamera bukan yang terbaik</Lead3>
                   </PlusMinusItem>
                 </div>
@@ -313,6 +316,7 @@ const IsiRekomendasi = () => {
                       src="/jumbo-laptop.png"
                       layout="fill"
                       objectFit="contain"
+                      alt="img-exam"
                     />
                   </ImageBox>
                   <MainContentBoxDesc
@@ -334,6 +338,7 @@ const IsiRekomendasi = () => {
                       src="/jumbo-laptop.png"
                       layout="fill"
                       objectFit="contain"
+                      alt="img-exam"
                     />
                   </ImageBox>
                   <MainContentBoxDesc
@@ -439,22 +444,22 @@ const IsiRekomendasi = () => {
                 <div>
                   <SH3 style={{ margin: "0 0 10px 0" }}>Kelebihan</SH3>
                   <PlusMinusItem>
-                    <Image src="/plus-logo.svg" width={20} height={20} />
+                    <Image src="/plus-logo.svg" width={20} height={20} alt="plus-logo" />
                     <Lead3>Desain cukup atraktif</Lead3>
                   </PlusMinusItem>
                   <PlusMinusItem>
-                    <Image src="/plus-logo.svg" width={20} height={20} />
+                    <Image src="/plus-logo.svg" width={20} height={20} alt="plus-logo" />
                     <Lead3>Layar besar</Lead3>
                   </PlusMinusItem>
                   <PlusMinusItem>
-                    <Image src="/plus-logo.svg" width={20} height={20} />
+                    <Image src="/plus-logo.svg" width={20} height={20} alt="plus-logo" />
                     <Lead3>Baterai awet</Lead3>
                   </PlusMinusItem>
                 </div>
                 <div>
                   <SH3 style={{ margin: "0 0 10px 0" }}>Kekurangan</SH3>
                   <PlusMinusItem>
-                    <Image src="/minus-logo.svg" width={20} height={20} />
+                    <Image src="/minus-logo.svg" width={20} height={20} alt="minus-logo" />
                     <Lead3>Kualitas kamera bukan yang terbaik</Lead3>
                   </PlusMinusItem>
                 </div>
