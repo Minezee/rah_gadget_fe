@@ -3,7 +3,7 @@ import { ButtonCarouselLeft, ButtonCarouselRight } from "../button/button";
 import { SliderBox, SliderWrapper } from "./slider-list.elements";
 
 interface ArticleListType {
-  children: JSX.Element | JSX.Element[];
+  children: React.ReactChild | React.ReactChild[];
   sliderWidth: number,
   id: String
 }

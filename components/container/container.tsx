@@ -1,7 +1,7 @@
 import { ContainerStyle } from "./container.elements";
 
 interface ContainerType {
-  children: JSX.Element | JSX.Element[];
+  children: React.ReactChild | React.ReactChild[];
   style?: Object;
 }
 

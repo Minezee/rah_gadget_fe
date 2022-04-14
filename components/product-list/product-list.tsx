@@ -1,7 +1,7 @@
 import { ProductListWrapper } from "./product-list.elements";
 
 interface ProductListType {
-  children: JSX.Element | JSX.Element[];
+  children: React.ReactChild | React.ReactChild[];
   gridCount: number,
   itemWidth: number
 }

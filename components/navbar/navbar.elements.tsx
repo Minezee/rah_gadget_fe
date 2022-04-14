@@ -32,7 +32,7 @@ const NavbarWrapperStyle = styled.div`
   }
 `;
 
-const NavbarWrapper = ({ children }: { children: JSX.Element|JSX.Element[] }) => {
+const NavbarWrapper = ({ children }: { children: React.ReactChild | React.ReactChild[] }) => {
   return (
     <NavbarWrapperStyle>
       <Container>{children}</Container>

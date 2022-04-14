@@ -4,7 +4,7 @@ import Navbar from "../components/navbar/navbar";
 import { NavbarItem } from "../components/navbar/navbar.elements";
 
 interface LayoutIndicatorType {
-  children: JSX.Element | JSX.Element[];
+  children: React.ReactChild | React.ReactChild[];
   style?: Object;
 }
 

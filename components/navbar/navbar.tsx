@@ -9,7 +9,7 @@ import React from "react";
 import Indicator from "../indicator/indicator";
 
 interface propsType {
-  children: JSX.Element|JSX.Element[],
+  children: React.ReactChild | React.ReactChild[],
   indicator?: boolean,
   percentage?: number
 }
